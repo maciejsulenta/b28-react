@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import Logo from "./components/Logo";
 import AboutUs from "./pages/AboutUs";
+import Opinions from "./pages/Opinions";
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -15,6 +16,7 @@ function App() {
         <Landing />
         <Logo />
         <AboutUs />
+        <Opinions />
       </PagesContainer>
     </ThemeProvider>
   );

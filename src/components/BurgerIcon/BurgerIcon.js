@@ -26,7 +26,7 @@ export const BurgerLineTop = styled.div`
   height: 2px;
   position: relative;
   background-color: ${(props) =>
-    props.isOpen == true ? theme.colors.fontDark : theme.colors.fontWhite};
+    props.isOpen === true ? theme.colors.fontDark : theme.colors.fontWhite};
   transition: all 0.5s ease-in-out;
   transform: translate(
       ${(props) => (props.isOpen === true ? "0px, 12px" : "0px, 0px")}
@@ -39,7 +39,7 @@ export const BurgerLineTop = styled.div`
     width: 6px;
     height: 6px;
     background-color: ${(props) =>
-      props.isOpen == true ? theme.colors.fontDark : theme.colors.fontWhite};
+      props.isOpen === true ? theme.colors.fontDark : theme.colors.fontWhite};
     transform: rotate(45deg);
     transition: all 0.5s ease-in-out;
   }
@@ -57,7 +57,7 @@ export const BurgerLineCenter = styled.div`
   height: 2px;
   position: relative;
   background-color: ${(props) =>
-    props.isOpen == true ? theme.colors.fontDark : theme.colors.fontWhite};
+    props.isOpen === true ? theme.colors.fontDark : theme.colors.fontWhite};
   transform: translate(
     ${(props) => (props.isOpen === true ? "-50px, 0px" : "0px, 0px;")}
   );
@@ -69,7 +69,7 @@ export const BurgerLineCenter = styled.div`
     width: 6px;
     height: 6px;
     background-color: ${(props) =>
-      props.isOpen == true ? "transparent" : theme.colors.fontWhite};
+      props.isOpen === true ? "transparent" : theme.colors.fontWhite};
     transition: all 0.5s ease-in-out;
     transform: rotate(45deg);
   }
@@ -87,7 +87,7 @@ export const BurgerLineBottom = styled.div`
   height: 2px;
   position: relative;
   background-color: ${(props) =>
-    props.isOpen == true ? theme.colors.fontDark : theme.colors.fontWhite};
+    props.isOpen === true ? theme.colors.fontDark : theme.colors.fontWhite};
   transition: all 0.5s ease-in-out;
   transform: translate(
       ${(props) => (props.isOpen === true ? "0px, -12px" : "0px, 0px")}
@@ -100,7 +100,7 @@ export const BurgerLineBottom = styled.div`
     width: 6px;
     height: 6px;
     background-color: ${(props) =>
-      props.isOpen == true ? theme.colors.fontDark : theme.colors.fontWhite};
+      props.isOpen === true ? theme.colors.fontDark : theme.colors.fontWhite};
     transform: rotate(45deg);
     transition: all 0.5s ease-in-out;
   }

@@ -6,4 +6,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin-bottom: ${(props) => (props.aboutus ? "-5em" : "0")};
 `;
