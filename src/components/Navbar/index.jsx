@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-// import { NavSocials, NavSocial } from "../../atoms/NavSocials";
 import Facebook from "../../assets/images/facebook.svg";
 import Instagram from "../../assets/images/instagram.svg";
 import BurgerIcon from "../BurgerIcon";

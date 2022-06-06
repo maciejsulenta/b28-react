@@ -4,14 +4,17 @@ import { ThemeProvider } from "styled-components";
 import { PagesContainer } from "./components/PagesContainer";
 import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
-
+import Logo from "./components/Logo";
+import AboutUs from "./pages/AboutUs";
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Navbar/>
+      <Navbar />
       <PagesContainer>
         <Landing />
+        <Logo />
+        <AboutUs />
       </PagesContainer>
     </ThemeProvider>
   );
