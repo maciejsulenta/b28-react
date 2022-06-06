@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { theme } from "../assets/styles/theme";
 
 export const PagesContainer = styled.section`
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
   background-color: ${theme.colors.bgcDark};
-
+  overflow-x: hidden;
   @media screen and (min-width: 450px) {
     font-size: 22px;
   }
