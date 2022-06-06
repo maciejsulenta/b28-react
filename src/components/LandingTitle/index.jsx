@@ -1,6 +1,5 @@
 import { StyledLandingTitle, LandingTitleWrap } from "./LandingTitle";
 import { keyframes } from "styled-components";
-
 const LandingTitle = () => {
   const b28Gradient = keyframes`
     0% {
