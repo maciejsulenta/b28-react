@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Container } from "../../components/Container";
 
 const AboutUs = () => {
-  return (
-    <div>AboutUs</div>
-  )
-}
+  return <Container vh="100vh"></Container>;
+};
 
-export default AboutUs
+export default AboutUs;

@@ -6,7 +6,7 @@ import LandingTitle from "../../components/LandingTitle";
 
 const Landing = () => {
   return (
-    <Container vh={"100vh"}>
+    <Container vh="100vh">
       <LandingTitle />
       <LandingButton />
       <IconScroll />
