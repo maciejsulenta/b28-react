@@ -1,22 +1,17 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useEffect } from "react";
-import Gallery1 from "../../assets/images/gallery1.png";
-import Gallery2 from "../../assets/images/gallery2.png";
-import Gallery3 from "../../assets/images/gallery3.png";
-import Gallery4 from "../../assets/images/gallery4.png";
-import Gallery5 from "../../assets/images/gallery5.png";
-import Gallery6 from "../../assets/images/gallery6.png";
+import { useEffect, useRef } from "react";
+import { galleryData } from "../../assets/data/galleryData";
 import { GalleryWrap, Slide, ImageContainer, Title } from "./Gallery.js";
 const Gallery = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    const components = document.querySelectorAll("#component");
+    const component = document.querySelector("#component");
     const container = document.querySelector("#container");
 
-    gsap.to(components, {
-      xPercent: -100 * (components.length - 1),
+    gsap.to(component, {
+      xPercent: -100 + 20,
       ease: "none",
       scrollTrigger: {
         trigger: container,
@@ -28,48 +23,46 @@ const Gallery = () => {
     });
   }, []);
 
+  const ref = useRef();
+
+  const skewConfigs = {
+    ease: 0.5,
+    current: 0,
+    previous: 0,
+    rounded: 0,
+  };
+
+  useEffect(() => {
+    requestAnimationFrame(() => skewScrolling());
+  }, []);
+  const skewScrolling = () => {
+    skewConfigs.current = window.scrollY;
+    skewConfigs.previous +=
+      (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease;
+    skewConfigs.rounded = Math.round(skewConfigs.previous * 100) / 100;
+    const size = window.innerWidth;
+    const difference = skewConfigs.current - skewConfigs.rounded;
+    const acceleration = difference / size;
+    const velocity = +acceleration;
+    const skewX = velocity * 200;
+    ref.current.style.transform = `skewX(${skewX}deg`;
+
+    requestAnimationFrame(() => skewScrolling());
+  };
+
   return (
     <>
       <GalleryWrap id="container">
         <Slide bgc id="component">
-          <ImageContainer col={"2/4"} row={"1/9"} img={Gallery1} />
-          <ImageContainer col={"13/15"} row={"2/8"} img={Gallery2} />
-          <ImageContainer col={"3/6"} row={"11/19"} img={Gallery3} />
-          <ImageContainer col={"8/11"} row={"5/15"} img={Gallery4} />
-          <ImageContainer col={"15/18"} row={"13/21"} img={Gallery5} />
-          <ImageContainer col={"17/20"} row={"4/11"} img={Gallery6} />
-        </Slide>
-        <Slide bgc id="component">
-          <ImageContainer col={"2/4"} row={"1/9"} img={Gallery1} />
-          <ImageContainer col={"13/15"} row={"2/8"} img={Gallery2} />
-          <ImageContainer col={"3/6"} row={"11/19"} img={Gallery3} />
-          <ImageContainer col={"8/11"} row={"5/15"} img={Gallery4} />
-          <ImageContainer col={"15/18"} row={"13/21"} img={Gallery5} />
-          <ImageContainer col={"17/20"} row={"4/11"} img={Gallery6} />
-        </Slide>
-        <Slide bgc id="component">
-          <ImageContainer col={"2/4"} row={"1/9"} img={Gallery1} />
-          <ImageContainer col={"13/15"} row={"2/8"} img={Gallery2} />
-          <ImageContainer col={"3/6"} row={"11/19"} img={Gallery3} />
-          <ImageContainer col={"8/11"} row={"5/15"} img={Gallery4} />
-          <ImageContainer col={"15/18"} row={"13/21"} img={Gallery5} />
-          <ImageContainer col={"17/20"} row={"4/11"} img={Gallery6} />
-        </Slide>
-        <Slide bgc id="component">
-          <ImageContainer col={"2/4"} row={"1/9"} img={Gallery1} />
-          <ImageContainer col={"13/15"} row={"2/8"} img={Gallery2} />
-          <ImageContainer col={"3/6"} row={"11/19"} img={Gallery3} />
-          <ImageContainer col={"8/11"} row={"5/15"} img={Gallery4} />
-          <ImageContainer col={"15/18"} row={"13/21"} img={Gallery5} />
-          <ImageContainer col={"17/20"} row={"4/11"} img={Gallery6} />
-        </Slide>
-        <Slide bgc id="component">
-          <ImageContainer col={"2/4"} row={"1/9"} img={Gallery1} />
-          <ImageContainer col={"13/15"} row={"2/8"} img={Gallery2} />
-          <ImageContainer col={"3/6"} row={"11/19"} img={Gallery3} />
-          <ImageContainer col={"8/11"} row={"5/15"} img={Gallery4} />
-          <ImageContainer col={"15/18"} row={"13/21"} img={Gallery5} />
-          <ImageContainer col={"17/20"} row={"4/11"} img={Gallery6} />
+          {galleryData.map((item) => (
+            <ImageContainer
+              ref={ref}
+              key={item.id}
+              col={item.col}
+              row={item.row}
+              img={item.img}
+            />
+          ))}
         </Slide>
         <Title>Nasze prace</Title>
       </GalleryWrap>

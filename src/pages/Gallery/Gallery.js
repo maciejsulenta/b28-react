@@ -13,7 +13,7 @@ export const Slide = styled.div`
   /* background-color: ${(props) =>
     props.bgc ? "cadetblue" : "transparent"}; */
   display: grid;
-  grid-template-columns: repeat(20, 1fr);
+  grid-template-columns: repeat(100, 1fr);
   grid-template-rows: repeat(20, 1fr);
 `;
 export const Title = styled.h2`
