@@ -1,37 +1,76 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
-import { Container, Slide } from "./Gallery.js";
+import { galleryData } from "../../assets/data/galleryData";
+import { GalleryWrap, Slide, ImageContainer, Title } from "./Gallery.js";
 const Gallery = () => {
+  //horizontal scroll
   gsap.registerPlugin(ScrollTrigger);
-
-  const ref = useRef();
-  const refs = useRef([]);
   useEffect(() => {
-    const components = document.querySelectorAll("#component");
+    const component = document.querySelector("#component");
     const container = document.querySelector("#container");
-
-    gsap.to(components, {
-      xPercent: -100 - (refs.current.length - 1),
+    gsap.to(component, {
+      xPercent: -100 + 20,
       ease: "none",
       scrollTrigger: {
         trigger: container,
         pin: true,
         scrub: 1,
-        // snap: 1 / (components.length - 1),
         end: () => "+=" + container.offsetWidth,
       },
     });
   }, []);
 
+  // array of refs
+  const ref = useRef([]);
+  useEffect(() => {
+    ref.current = ref.current.slice(0, galleryData.length);
+  }, [galleryData]);
+
+  // skew images on scroll
+  const skewConfigs = {
+    ease: 0.4,
+    current: 0,
+    previous: 0,
+    rounded: 0,
+  };
+
+  useEffect(() => {
+    requestAnimationFrame(() => skewScrolling());
+  }, []);
+
+  const skewScrolling = () => {
+    skewConfigs.current = window.scrollY;
+    skewConfigs.previous +=
+      (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease;
+    skewConfigs.rounded = Math.round(skewConfigs.previous * 100) / 100;
+    const size = window.innerWidth;
+    const difference = skewConfigs.current - skewConfigs.rounded;
+    const acceleration = difference / size;
+    const velocity = +acceleration;
+    const skewX = velocity * 200;
+
+    requestAnimationFrame(() => skewScrolling());
+    ref.current.map((item) => (item.style.transform = `skewX(${skewX}deg`));
+  };
+
   return (
     <>
-      <Container id="container">
+      <GalleryWrap id="container">
         <Slide bgc id="component">
-          Primeiro
+          {galleryData.map((item) => (
+            <ImageContainer
+              className="skewek"
+              ref={(el) => (ref.current[item.id] = el)}
+              key={item.id}
+              col={item.col}
+              row={item.row}
+              img={item.img}
+            />
+          ))}
         </Slide>
-        <Slide id="component">sikutko</Slide>
-      </Container>
+        <Title>Nasze prace</Title>
+      </GalleryWrap>
     </>
   );
 };

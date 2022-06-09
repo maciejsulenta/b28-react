@@ -1,16 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import useScrollPosition from "../useScrollPosition";
-import {
-  TitleContainerWrap,
-  TitleContainer,
-  Title,
-} from "./AboutUsTitle";
+import { TitleContainerWrap, TitleContainer, Title } from "./AboutUsTitle";
 
 const AboutUsTitle = () => {
   const app = useRef();
   const scrollContainer = useRef();
   const skewConfigs = {
-    ease: 0.1,
+    ease: 0.2,
     current: 0,
     previous: 0,
     rounded: 0,

@@ -17,7 +17,7 @@ const Opinions = () => {
         t={"99%"}
         l={"99%"}
         text={
-          "Bardzo mila atmosfera, każdy detal tatuażu doprowadzony do perfekcji. Widać ze chłopaki pracują z pasja!"
+          "Bardzo mila atmosfera, każdy detal tatuażu doprowadzony do perfekcji. Widać ze chłopaki pracują z pasją!"
         }
       />
     </Container>
