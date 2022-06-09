@@ -6,7 +6,7 @@ export const Container = styled.div`
   width: 500vw;
 `;
 export const Slide = styled.div`
-  width: 100%;
+  flex: 1;
   height: 100vh;
   background-color: ${(props) => (props.bgc ? "brown" : "cadetblue")};
 `;
