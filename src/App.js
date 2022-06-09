@@ -7,18 +7,23 @@ import Landing from "./pages/Landing";
 import Logo from "./components/Logo";
 import AboutUs from "./pages/AboutUs";
 import Opinions from "./pages/Opinions";
+import Gallery from "./pages/Gallery";
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Navbar />
-      <PagesContainer>
-        <Landing />
-        <Logo />
-        <AboutUs />
-        <Opinions />
-      </PagesContainer>
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Navbar />
+        <PagesContainer>
+          <Landing />
+          <Logo />
+          <AboutUs />
+          <Opinions />
+          <Gallery />
+          <Opinions />
+        </PagesContainer>
+      </ThemeProvider>
+    </>
   );
 }
 
