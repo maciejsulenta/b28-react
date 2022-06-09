@@ -10,8 +10,6 @@ export const Slide = styled.div`
   width: 100%;
   height: 100vh;
   color: white;
-  /* background-color: ${(props) =>
-    props.bgc ? "cadetblue" : "transparent"}; */
   display: grid;
   grid-template-columns: repeat(100, 1fr);
   grid-template-rows: repeat(20, 1fr);
