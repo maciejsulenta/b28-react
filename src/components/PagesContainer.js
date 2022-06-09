@@ -4,8 +4,6 @@ import { theme } from "../assets/styles/theme";
 export const PagesContainer = styled.section`
   width: 100%;
   height: fit-content;
-  display: flex;
-  flex-direction: column;
   background-color: ${theme.colors.bgcDark};
   overflow-x: hidden;
   @media screen and (min-width: 450px) {
