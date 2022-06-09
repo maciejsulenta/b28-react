@@ -1,7 +1,6 @@
 import { Container } from "../../components/Container";
 import ImgOne from "../../assets/images/imgAbout1.png";
 import ImgTwo from "../../assets/images/imgAbout2.png";
-import useScrollPosition from "../../components/useScrollPosition";
 import AboutUsTitle from "../../components/AboutUsTitle";
 import AboutUsText from "../../components/AboutUsText";
 import AboutUsImage from "../../components/AboutUsImage";
