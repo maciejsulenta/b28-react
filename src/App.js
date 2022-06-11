@@ -21,7 +21,8 @@ function App() {
           <AboutUs />
           <Opinions />
           <Gallery />
-          <Contact  />
+          <Contact />
+          {/* <Opinions /> */}
         </PagesContainer>
       </ThemeProvider>
     </>
