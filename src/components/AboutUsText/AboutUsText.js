@@ -47,7 +47,7 @@ export const AboutUsTextWrap = styled.div`
 export const AboutUsTextContent = styled.p`
   font-family: "Playfair Display";
   font-style: normal;
-  font-weight: ${(props) => (props.lettering ? "600" : "400")};
+  font-weight: ${(props) => (props.lettering ? "800" : "500")};
   font-size: ${(props) => (props.lettering ? "0.85em" : "0.8em")};
   text-align: center;
   letter-spacing: 0.015em;

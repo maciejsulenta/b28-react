@@ -44,9 +44,9 @@ export const Title = styled.h2`
     display: ${(props) => (props.mobile ? "none" : "block")};
   }
   @media screen and (min-width: 960px) {
-    font-size: 6.5em;
+    font-size: 6em;
   }
   @media screen and (min-width: 1600px) {
-    font-size: 7em;
+    font-size: 6.5em;
   }
 `;
