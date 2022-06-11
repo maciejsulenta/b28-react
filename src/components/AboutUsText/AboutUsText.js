@@ -45,7 +45,7 @@ export const AboutUsTextWrap = styled.div`
   }
 `;
 export const AboutUsTextContent = styled.p`
-  font-family: "Playfair Display";
+  font-family: ${(props) => (props.lettering ? "Playfair Display" : "Nunito")};
   font-style: normal;
   font-weight: ${(props) => (props.lettering ? "800" : "500")};
   font-size: ${(props) => (props.lettering ? "0.85em" : "0.8em")};
