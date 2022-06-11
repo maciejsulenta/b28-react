@@ -5,14 +5,9 @@ const GalleryTitle = () => {
   const text1 = useRef();
   const text2 = useRef();
   useEffect(() => {
-    const texts = [
-      "Nasze prace",
-      "Nasza twórczość",
-      "Nasze tatuaże",
-      "Nasze dzieła",
-    ];
+    const texts = ["Nasze prace", "Nasza twórczość", "Nasze tatuaże", "Nasze dzieła"];
 
-    const morphTime = 1.5;
+    const morphTime = 2;
     const cooldownTime = 0.25;
 
     let textIndex = texts.length - 1;
