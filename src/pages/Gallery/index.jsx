@@ -2,7 +2,14 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import { galleryData } from "../../assets/data/galleryData";
-import { GalleryWrap, Slide, ImageContainer, Title } from "./Gallery.js";
+import Title from "../../components/GalleryTitle";
+import {
+  GalleryWrap,
+  Slide,
+  ImageContainer,
+  TitleContainer,
+  TitleWrap,
+} from "./Gallery.js";
 const Gallery = () => {
   //horizontal scroll
   gsap.registerPlugin(ScrollTrigger);
@@ -10,7 +17,7 @@ const Gallery = () => {
     const component = document.querySelector("#component");
     const container = document.querySelector("#container");
     gsap.to(component, {
-      xPercent: -100 + 20,
+      xPercent: -100,
       ease: "none",
       scrollTrigger: {
         trigger: container,
@@ -48,7 +55,7 @@ const Gallery = () => {
     const difference = skewConfigs.current - skewConfigs.rounded;
     const acceleration = difference / size;
     const velocity = +acceleration;
-    const skewX = velocity * 200;
+    const skewX = velocity * 700;
 
     requestAnimationFrame(() => skewScrolling());
     ref.current.map((item) => (item.style.transform = `skewX(${skewX}deg`));
@@ -57,10 +64,15 @@ const Gallery = () => {
   return (
     <>
       <GalleryWrap id="container">
-        <Slide bgc id="component">
+        <Slide start />
+        <Slide id="component">
           {galleryData.map((item) => (
             <ImageContainer
-              className="skewek"
+              style={{ clipPath: "inset(0px 100% 0px 0px)" }}
+              whileInView={{
+                clipPath: "inset(0px 0px 0px 0px)",
+              }}
+              viewport={{ once: true }}
               ref={(el) => (ref.current[item.id] = el)}
               key={item.id}
               col={item.col}
@@ -69,7 +81,7 @@ const Gallery = () => {
             />
           ))}
         </Slide>
-        <Title>Nasze prace</Title>
+        <Title />
       </GalleryWrap>
     </>
   );

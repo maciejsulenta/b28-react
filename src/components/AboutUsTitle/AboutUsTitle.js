@@ -4,10 +4,7 @@ import { theme } from "../../assets/styles/theme";
 export const TitleContainerWrap = styled.div`
   overflow-x: hidden;
   @media screen and (min-width: 768px) {
-    margin-bottom: -7em;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: -9em;
+    margin-bottom: -6em;
   }
 `;
 export const TitleContainer = styled.div.attrs((props) => ({
@@ -20,6 +17,7 @@ export const TitleContainer = styled.div.attrs((props) => ({
   padding: 2em 0;
   width: 300%;
   background-color: transparent;
+  transition: all 0.01s linear;
   @media screen and (max-width: 767px) {
     transform: skew(0deg) !important;
     left: 0 !important;
@@ -46,7 +44,7 @@ export const Title = styled.h2`
     display: ${(props) => (props.mobile ? "none" : "block")};
   }
   @media screen and (min-width: 960px) {
-    font-size:6.5em;
+    font-size: 6.5em;
   }
   @media screen and (min-width: 1600px) {
     font-size: 7em;
