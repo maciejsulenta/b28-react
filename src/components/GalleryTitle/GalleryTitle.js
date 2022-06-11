@@ -24,5 +24,5 @@ export const Text = styled.span`
   font-size: 4em;
   text-align: center;
   user-select: none;
-  color: #666;
+  color: ${theme.colors.opinionFont};
 `;

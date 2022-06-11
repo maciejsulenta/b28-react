@@ -8,5 +8,8 @@ export const Container = styled.div`
   align-items: center;
   position: relative;
   margin-bottom: ${(props) => (props.aboutus ? "-5em" : "0")};
-  padding-top: ${(props) => (props.contact ? "20em" : "0")};
+
+  @media screen and (min-width: 960px) {
+    padding-top: ${(props) => (props.contact ? "15em" : "0")};
+  }
 `;
