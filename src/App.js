@@ -8,6 +8,7 @@ import Logo from "./components/Logo";
 import AboutUs from "./pages/AboutUs";
 import Opinions from "./pages/Opinions";
 import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
           <AboutUs />
           <Opinions />
           <Gallery />
-          <Opinions />
+          <Contact  />
         </PagesContainer>
       </ThemeProvider>
     </>

@@ -64,7 +64,7 @@ const Gallery = () => {
   return (
     <>
       <GalleryWrap id="container">
-        <Slide start />
+        <Slide starter />
         <Slide id="component">
           {galleryData.map((item) => (
             <ImageContainer

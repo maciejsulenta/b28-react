@@ -7,7 +7,7 @@ export const GalleryWrap = styled.div`
   position: relative;
 `;
 export const Slide = styled.div`
-  flex: ${(props) => (props.start ? "1" : "5")};
+  flex: ${(props) => (props.starter ? "1" : "5")};
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(100, 1fr);
