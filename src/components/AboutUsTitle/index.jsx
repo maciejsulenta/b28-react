@@ -24,7 +24,7 @@ const AboutUsTitle = () => {
     const difference = skewConfigs.current - skewConfigs.rounded;
     const acceleration = difference / size;
     const velocity = +acceleration;
-    const skewX = velocity * 200;
+    const skewX = velocity * 300;
     scrollContainer.current.style.transform = `skewX(${skewX}deg`;
 
     requestAnimationFrame(() => skewScrolling());
