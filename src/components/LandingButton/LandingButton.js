@@ -9,7 +9,7 @@ export const ButtonContainer = styled.button`
   font-family: "Helvetica";
   font-size: 1em;
   background: rgba(221, 221, 221, 0.1);
-  font-weight: 700;
+  font-weight: 600;
   color: ${theme.colors.buttonWhite};
   display: flex;
   justify-content: center;

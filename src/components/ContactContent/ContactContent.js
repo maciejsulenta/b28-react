@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
 import DoorImage from "../../assets/images/contact.png";
+import { FacebookOutlined } from "@mui/icons-material";
+import InstagramIcon from "@mui/icons-material/Instagram";
 export const ContactWrap = styled.div`
   width: 100%;
   height: fit-content;
@@ -72,9 +74,10 @@ export const InfoWrap = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 0.8em;
-  font-size: 0.7em;
+  font-size: 0.9em;
   @media screen and (min-width: 768px) {
     width: ${(props) => (props.left ? "60%" : "fit-content")};
+    font-size: 0.7em;
   }
   @media screen and (min-width: 960px) {
     margin-left: ${(props) => (props.left ? "0" : "22%")};
@@ -110,20 +113,43 @@ export const Text = styled.p`
   }
 `;
 export const Logo = styled.div`
-  position: relative;
-  width: 70%;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
   aspect-ratio: 1/1;
   background-image: url(${(props) => props.src});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: -20em;
   @media screen and (min-width: 768px) {
     width: 40%;
-    margin-top: 0;
+    position: relative;
+    margin-top: 2em;
   }
-  @media screen and (min-width: 160px) {
+  @media screen and (min-width: 960px) {
     width: 30%;
-    margin-top: 3em;
+    /* margin-top: 5em; */
+  }
+  @media screen and (min-width: 1600px) {
+    width: 20%;
+    /* margin-top: 5em; */
+  }
+`;
+export const StyledInstagramIcon = styled(InstagramIcon)`
+  font-size: 1em !important;
+  text-decoration: none;
+  color: ${theme.colors.fontWhite};
+
+  @media screen and (min-width: 768px) {
+    color: ${theme.colors.fontDark};
+  }
+`;
+export const StyledFacebookOutlined = styled(FacebookOutlined)`
+  font-size: 1em !important;
+  text-decoration: none;
+  color: ${theme.colors.fontWhite};
+
+  @media screen and (min-width: 768px) {
+    color: ${theme.colors.fontDark};
   }
 `;

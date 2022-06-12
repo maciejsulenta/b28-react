@@ -73,7 +73,7 @@ const Gallery = () => {
                 clipPath: "inset(0px 0px 0px 0px)",
               }}
               viewport={{ once: true }}
-              ref={(el) => (ref.current[item.id] = el)}
+              // ref={(el) => (ref.current[item.id] = el)}
               key={item.id}
               col={item.col}
               row={item.row}
