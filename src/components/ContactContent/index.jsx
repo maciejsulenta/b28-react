@@ -2,6 +2,7 @@ import React from "react";
 import Instagram from "../../assets/images/instagramDark.svg";
 import Facebook from "../../assets/images/facebookDark.svg";
 import LogoB28 from "../../assets/images/logo.svg";
+
 import {
   ContactWrap,
   ContactCone,
@@ -12,6 +13,8 @@ import {
   SocialIcon,
   Text,
   Logo,
+  StyledFacebookOutlined,
+  StyledInstagramIcon
 } from "./ContactContent";
 
 const ContactContent = () => {
@@ -39,7 +42,7 @@ const ContactContent = () => {
               href="https://www.facebook.com/B28Tattoo"
               target="_blank"
             >
-              <SocialIcon src={Facebook} />
+              <StyledFacebookOutlined />
               <Text>Facebook</Text>
             </StyledLink>
           </InfoWrap>
@@ -48,7 +51,7 @@ const ContactContent = () => {
               href="https://www.instagram.com/b28tattoo/"
               target="_blank"
             >
-              <SocialIcon src={Instagram} />
+              <StyledInstagramIcon/>
               <Text>B28 studio</Text>
             </StyledLink>
           </InfoWrap>
@@ -57,7 +60,7 @@ const ContactContent = () => {
               href="https://www.instagram.com/b28_damian/"
               target="_blank"
             >
-              <SocialIcon src={Instagram} />
+              <StyledInstagramIcon/> 
               <Text>B28 Damian</Text>
             </StyledLink>
           </InfoWrap>
@@ -66,7 +69,7 @@ const ContactContent = () => {
               href="https://www.instagram.com/demonology_ink/"
               target="_blank"
             >
-              <SocialIcon src={Instagram} />
+               <StyledInstagramIcon/>
               <Text>demonology_ink</Text>
             </StyledLink>
           </InfoWrap>

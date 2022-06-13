@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import Opinions from "./pages/Opinions";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -22,7 +23,7 @@ function App() {
           <Opinions />
           <Gallery />
           <Contact />
-          {/* <Opinions /> */}
+          <Footer />
         </PagesContainer>
       </ThemeProvider>
     </>
