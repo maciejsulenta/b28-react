@@ -1,12 +1,12 @@
 import { Container } from "../../components/Container";
 import Opinion from "../../components/Opinion";
-import { OpinionTitle } from "../../components/Opinion/Opinion";
+import { OpinionTitle } from "../../components/OpinionTitle";
 const Opinions = () => {
   return (
     <Container vh="fit-content">
       <OpinionTitle>Opinie naszych klientów</OpinionTitle>
       <Opinion
-        first={"true"}
+        first
         t={"-.2em"}
         l={"-.4em"}
         text={

@@ -14,9 +14,7 @@ export const ContactWrap = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 1em;
     min-height: 70vh;
-    /* margin-bottom: 1em; */
   }
 `;
 export const ContactCone = styled.div`
@@ -43,8 +41,15 @@ export const ImageContainer = styled.div`
   margin-top: -2.5em;
   @media screen and (min-width: 768px) {
     position: static;
-    max-width: 450px;
-    max-height: 580px;
+    max-width: 260px;
+    max-height: 360px;
+    clip-path: none;
+    z-index: 2;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1600px) {
+    max-width: 420px;
+    max-height: 540px;
     clip-path: none;
     z-index: 2;
     margin-top: 0;
@@ -77,10 +82,15 @@ export const InfoWrap = styled.div`
   font-size: 0.9em;
   @media screen and (min-width: 768px) {
     width: ${(props) => (props.left ? "60%" : "fit-content")};
-    font-size: 0.7em;
+    font-size: 0.6em;
+    margin-bottom: 0.3em;
   }
   @media screen and (min-width: 960px) {
     margin-left: ${(props) => (props.left ? "0" : "22%")};
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 0.7em;
+    margin-bottom: 0.5em;
   }
 `;
 export const StyledLink = styled.a`

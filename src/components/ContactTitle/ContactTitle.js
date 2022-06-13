@@ -3,6 +3,7 @@ import { theme } from "../../assets/styles/theme";
 
 export const TitleWrap = styled.div`
   z-index: 2;
+  padding-bottom: 0.5em;
 `;
 export const Title = styled.h2`
   font-size: 2.6em;
@@ -14,7 +15,11 @@ export const Title = styled.h2`
   color: ${theme.colors.fontWhite};
   letter-spacing: 0.02em;
   line-height: 1em;
+
   @media screen and (min-width: 768px) {
-    font-size: 3em;
+    font-size: 2em;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 2.6em;
   }
 `;

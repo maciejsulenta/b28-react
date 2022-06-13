@@ -12,8 +12,11 @@ export const FooterWrap = styled.div`
   align-items: center;
   padding: 2em;
   gap: 2em;
-  /* background-color: brown; */
-  /* transform: translateY(-10em); */
+  margin-top: 4em;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0em;
+  }
 `;
 export const Text = styled.p`
   font-size: 2.2em;
@@ -23,8 +26,11 @@ export const Text = styled.p`
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    font-size: 2.6em;
+    font-size: 2em;
     width: 10.5em;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 2.6em;
   }
 `;
 export const Button = styled.button`

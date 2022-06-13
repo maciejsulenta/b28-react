@@ -32,7 +32,7 @@ const Gallery = () => {
   const ref = useRef([]);
   useEffect(() => {
     ref.current = ref.current.slice(0, galleryData.length);
-  }, [galleryData]);
+  }, []);
 
   // skew images on scroll
   const skewConfigs = {
@@ -44,7 +44,7 @@ const Gallery = () => {
 
   useEffect(() => {
     requestAnimationFrame(() => skewScrolling());
-  }, []);
+  });
 
   const skewScrolling = () => {
     skewConfigs.current = window.scrollY;
