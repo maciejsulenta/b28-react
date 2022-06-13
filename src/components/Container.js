@@ -7,8 +7,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-bottom: ${(props) => (props.aboutus ? "-5em" : "0")};
-
+  /* margin-bottom: ${(props) => (props.aboutus ? "-5em" : "0")}; */
+  @media screen and (min-width: 768px) {
+    margin-top: ${(props) => (props.opinions ? "6em" : "0")};
+  }
   @media screen and (min-width: 960px) {
     padding-top: ${(props) => (props.contact ? "15em" : "0")};
   }

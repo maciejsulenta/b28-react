@@ -1,0 +1,88 @@
+import React from "react";
+import { Container } from "../../components/Container";
+import ImageOne from "../../assets/images/imgAbout1.png";
+import ImageTwo from "../../assets/images/imgAbout2.png";
+import LogoPic from "../../assets/images/logoDark.svg";
+
+import {
+  AboutUsContainer,
+  AboutUsWrap,
+  Image,
+  TextContainer,
+  Text,
+  Logo,
+  Arrow,
+} from "./AboutUsDesktop";
+const AboutUsDesktop = () => {
+  return (
+    <Container vh="fit-content">
+      <AboutUsContainer>
+        <AboutUsWrap top>
+          <TextContainer
+            style={{ opacity: 0, y: "4em" }}
+            whileInView={{
+              opacity: 1,
+              y: "3em",
+            }}
+            viewport={{ once: true }}
+          >
+            <Text big>Studio Projekt B28</Text>
+            <Text>
+              oferuje fachowe i twórcze podejście do tematu tatuowania.
+              Podstawowym celem naszej działalności jest tworzenie
+              indywidualnych i niepowtarzalnych wzorów. Klient może skorzystać u
+              nas z przygotowanych do wglądu, przygotować własny projekt lub
+              zamówić u nas projekt tatuażu ”na życzenie”.
+            </Text>
+          </TextContainer>
+        </AboutUsWrap>
+        <AboutUsWrap bgc>
+          <Image
+            img={ImageTwo}
+            style={{ clipPath: "inset(0px 0px 100% 0px)" }}
+            whileInView={{
+              clipPath: "inset(0px 0px 0px 0px)",
+            }}
+            viewport={{ once: true }}
+          />
+          <Logo
+            img={LogoPic}
+            style={{ opacity: 0, y: "0em" }}
+            whileInView={{
+              opacity: 1,
+              y: "2em",
+            }}
+            viewport={{ once: true }}
+          />
+          <Image
+            img={ImageOne}
+            style={{ clipPath: "inset(0px 0px 100% 0px)" }}
+            whileInView={{
+              clipPath: "inset(0px 0px 0px 0px)",
+            }}
+            viewport={{ once: true }}
+          />
+        </AboutUsWrap>
+        <Arrow
+          left="true"
+          style={{ top: "4em", left: "-61vw" }}
+          whileInView={{
+            top: "12em",
+            left: "-6.6vw",
+          }}
+          viewport={{ once: true }}
+        />
+        <Arrow
+          style={{ top: "4em", right: "-61vw" }}
+          whileInView={{
+            top: "12em",
+            right: "-6.6vw",
+          }}
+          viewport={{ once: true }}
+        />
+      </AboutUsContainer>
+    </Container>
+  );
+};
+
+export default AboutUsDesktop;

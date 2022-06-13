@@ -34,8 +34,8 @@ export const Text = styled.p`
   }
 `;
 export const Button = styled.button`
-  width: 7em;
-  height: 7em;
+  width: 5em;
+  height: 5em;
   border: 3px solid ${theme.colors.fontWhite};
   border-radius: 50%;
   background: transparent;
@@ -46,12 +46,12 @@ export const Button = styled.button`
   }
 
   @media screen and (min-width: 768px) {
-    width: 10em;
-    height: 10em;
+    width: 7em;
+    height: 7em;
     border: 6px solid ${theme.colors.fontWhite};
   }
 `;
 export const StyledArrowUpwardRoundedIcon = styled(ArrowUpwardRoundedIcon)`
-  font-size: 6em !important;
+  font-size: 4em !important;
   color: ${theme.colors.fontWhite};
 `;

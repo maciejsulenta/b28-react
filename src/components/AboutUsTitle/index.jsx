@@ -1,6 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import useScrollPosition from "../useScrollPosition";
-import { TitleContainerWrap, TitleContainer, Title } from "./AboutUsTitle";
+import {
+  TitleContainerWrap,
+  TitleContainer,
+  TitleWrap,
+  Title,
+} from "./AboutUsTitle";
 
 const AboutUsTitle = () => {
   const app = useRef();
@@ -33,8 +38,10 @@ const AboutUsTitle = () => {
   return (
     <TitleContainerWrap ref={app}>
       <TitleContainer posText={scrollPos} ref={scrollContainer}>
-        <Title mobile>Poznaj nas lepiej</Title>
-        <Title>Poznaj nas lepiej Poznaj nas lepiej</Title>
+        <TitleWrap mobile>
+          <Title mobile>Poznaj nas lepiej</Title>
+        </TitleWrap>
+        <Title>Poznaj nas lepiej Poznaj nas lepiej Poznaj nas lepiej</Title>
       </TitleContainer>
     </TitleContainerWrap>
   );

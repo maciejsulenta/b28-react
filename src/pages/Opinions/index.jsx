@@ -3,7 +3,7 @@ import Opinion from "../../components/Opinion";
 import { OpinionTitle } from "../../components/OpinionTitle";
 const Opinions = () => {
   return (
-    <Container vh="fit-content">
+    <Container vh="fit-content" opinions>
       <OpinionTitle>Opinie naszych klientów</OpinionTitle>
       <Opinion
         first

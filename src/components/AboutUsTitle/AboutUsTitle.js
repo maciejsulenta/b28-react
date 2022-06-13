@@ -24,25 +24,35 @@ export const TitleContainer = styled.div.attrs((props) => ({
     width: 100%;
   }
 `;
+export const TitleWrap = styled.div`
+  width: 15em;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
 export const Title = styled.h2`
-  display: ${(props) => (props.mobile ? "block" : "none")};
   font-family: "Playfair Display";
-  font-size: 3.2em;
+  font-size: 2.6em;
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.015em;
+
   color: ${theme.colors.fontWhite};
-  @media screen and (min-width: 450px) {
-    font-size: 4em;
-  }
-  @media screen and (min-width: 550px) {
-    font-size: 5.5em;
-  }
+  display: ${(props) => (props.mobile ? "block" : "none")};
   @media screen and (min-width: 768px) {
+    font-size: 4.5em;
     text-align: left;
+    white-space: nowrap;
     display: ${(props) => (props.mobile ? "none" : "block")};
   }
   @media screen and (min-width: 960px) {
+    font-size: 5em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 5.5em;
+  }
+  @media screen and (min-width: 1600px) {
     font-size: 6em;
   }
 `;

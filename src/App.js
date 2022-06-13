@@ -5,7 +5,8 @@ import { PagesContainer } from "./components/PagesContainer";
 import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import Logo from "./components/Logo";
-import AboutUs from "./pages/AboutUs";
+import AboutUsMobile from "./pages/AboutUsMobile";
+import AboutUsDesktop from "./pages/AboutUsDesktop";
 import Opinions from "./pages/Opinions";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
@@ -19,7 +20,8 @@ function App() {
         <PagesContainer>
           <Landing />
           <Logo />
-          <AboutUs />
+          <AboutUsMobile />
+          <AboutUsDesktop />
           <Opinions />
           <Gallery />
           <Contact />

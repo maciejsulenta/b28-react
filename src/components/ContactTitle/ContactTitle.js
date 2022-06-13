@@ -15,9 +15,8 @@ export const Title = styled.h2`
   color: ${theme.colors.fontWhite};
   letter-spacing: 0.02em;
   line-height: 1em;
-
   @media screen and (min-width: 768px) {
-    font-size: 2em;
+    font-size: 2.6em;
   }
   @media screen and (min-width: 1600px) {
     font-size: 2.6em;
