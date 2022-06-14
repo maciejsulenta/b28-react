@@ -3,6 +3,7 @@ import { theme } from "../../assets/styles/theme";
 import DoorImage from "../../assets/images/contact.png";
 import { FacebookOutlined } from "@mui/icons-material";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { motion } from "framer-motion";
 export const ContactWrap = styled.div`
   width: 100%;
   height: fit-content;
@@ -11,13 +12,14 @@ export const ContactWrap = styled.div`
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 768px) {
+    height: 20em;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    min-height: 70vh;
   }
 `;
-export const ContactCone = styled.div`
+export const ContactCone = styled(motion.div)`
+  transition: all 0.5s ease;
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
@@ -29,7 +31,7 @@ export const ContactCone = styled.div`
     z-index: 0;
   }
 `;
-export const ImageContainer = styled.div`
+export const ImageContainer = styled(motion.div)`
   width: 15em;
   height: 21em;
   clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
@@ -39,6 +41,7 @@ export const ImageContainer = styled.div`
   z-index: 0;
   position: absolute;
   margin-top: -2.5em;
+  transition: all 0.5s linear 0.5s;
   @media screen and (min-width: 768px) {
     position: static;
     max-width: 260px;
@@ -55,7 +58,7 @@ export const ImageContainer = styled.div`
     margin-top: 0;
   }
 `;
-export const InfoContainer = styled.div`
+export const InfoContainer = styled(motion.div)`
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -63,6 +66,7 @@ export const InfoContainer = styled.div`
   align-items: center;
   padding-top: ${(props) => (props.left ? "20em" : "0")};
   margin-bottom: 2em;
+  transition: all 0.5s ease 0.5s;
   @media screen and (min-width: 768px) {
     width: 25%;
     height: 60%;
@@ -80,6 +84,7 @@ export const InfoWrap = styled.div`
   align-items: center;
   margin-bottom: 0.8em;
   font-size: 0.9em;
+  transition: all 1s linear;
   @media screen and (min-width: 768px) {
     width: ${(props) => (props.left ? "60%" : "fit-content")};
     font-size: 0.6em;

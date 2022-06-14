@@ -14,14 +14,22 @@ import {
   Text,
   Logo,
   StyledFacebookOutlined,
-  StyledInstagramIcon
+  StyledInstagramIcon,
 } from "./ContactContent";
 
 const ContactContent = () => {
   return (
     <>
       <ContactWrap>
-        <InfoContainer left>
+        <InfoContainer
+          left
+          style={{ y: 50, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          viewport={{ once: true }}
+        >
           <InfoWrap left>
             <Text>Adres</Text>
             <Text info>ul. Wieniawska 4/26, 20-400 Lublin</Text>
@@ -35,8 +43,18 @@ const ContactContent = () => {
             <Text info>797 098 991</Text>
           </InfoWrap>
         </InfoContainer>
-        <ImageContainer />
-        <InfoContainer>
+        <ImageContainer
+          style={{ clipPath: "inset(0 0 100% 0)" }}
+          whileInView={{ clipPath: "inset(0 0 0 0)" }}
+        />
+        <InfoContainer
+          style={{ y: 50, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          viewport={{ once: true }}
+        >
           <InfoWrap>
             <StyledLink
               href="https://www.facebook.com/B28Tattoo"
@@ -51,7 +69,7 @@ const ContactContent = () => {
               href="https://www.instagram.com/b28tattoo/"
               target="_blank"
             >
-              <StyledInstagramIcon/>
+              <StyledInstagramIcon />
               <Text>B28 studio</Text>
             </StyledLink>
           </InfoWrap>
@@ -60,7 +78,7 @@ const ContactContent = () => {
               href="https://www.instagram.com/b28_damian/"
               target="_blank"
             >
-              <StyledInstagramIcon/> 
+              <StyledInstagramIcon />
               <Text>B28 Damian</Text>
             </StyledLink>
           </InfoWrap>
@@ -69,12 +87,18 @@ const ContactContent = () => {
               href="https://www.instagram.com/demonology_ink/"
               target="_blank"
             >
-               <StyledInstagramIcon/>
+              <StyledInstagramIcon />
               <Text>demonology_ink</Text>
             </StyledLink>
           </InfoWrap>
         </InfoContainer>
-        <ContactCone />
+        <ContactCone
+          style={{ clipPath: "polygon(0 40%, 5% 50%, 5% 50%, 0 60%)" }}
+          whileInView={{
+            clipPath: "polygon(0 0, 100% 30%, 100% 70%, 0% 100%)",
+          }}
+          viewport={{ once: true }}
+        />
       </ContactWrap>
       <Logo src={LogoB28} />
     </>
