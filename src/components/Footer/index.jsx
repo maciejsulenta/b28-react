@@ -9,7 +9,11 @@ import {
 
 const Footer = () => {
   return (
-    <FooterWrap>
+    <FooterWrap
+      style={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+    >
       <Title>to już koniec, umów się na wizytę</Title>
       <Button>
         <StyledArrowUpwardRoundedIcon />

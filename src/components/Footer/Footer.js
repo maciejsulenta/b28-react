@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
 import ArrowUpwardRoundedIcon from "@mui/icons-material/ArrowUpwardRounded";
-
-export const FooterWrap = styled.div`
+import { motion } from "framer-motion";
+export const FooterWrap = styled(motion.div)`
   position: relative;
   top: -2em;
   display: flex;
@@ -12,6 +12,7 @@ export const FooterWrap = styled.div`
   padding: 2em;
   gap: 2em;
   margin: 4em auto 0 auto;
+  transition: all 0.5s ease;
   @media screen and (min-width: 550px) {
     width: 26em;
   }

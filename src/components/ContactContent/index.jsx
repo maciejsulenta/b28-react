@@ -46,6 +46,7 @@ const ContactContent = () => {
         <ImageContainer
           style={{ clipPath: "inset(0 0 100% 0)" }}
           whileInView={{ clipPath: "inset(0 0 0 0)" }}
+          viewport={{ once: true }}
         />
         <InfoContainer
           style={{ y: 50, opacity: 0 }}
