@@ -110,10 +110,6 @@ export const StyledLink = styled.a`
     flex-direction: row;
   }
 `;
-export const SocialIcon = styled.img`
-  width: 0.9em;
-  height: 0.9em;
-`;
 export const Text = styled.p`
   color: ${theme.colors.fontWhite};
   font-weight: ${(props) => (props.info ? "700" : "400")};
@@ -146,7 +142,7 @@ export const Logo = styled.div`
   }
 `;
 export const StyledInstagramIcon = styled(InstagramIcon)`
-  font-size: 1em !important;
+  font-size: ${theme.fontSizes.normal} !important;
   text-decoration: none;
   color: ${theme.colors.fontWhite};
 
@@ -155,7 +151,7 @@ export const StyledInstagramIcon = styled(InstagramIcon)`
   }
 `;
 export const StyledFacebookOutlined = styled(FacebookOutlined)`
-  font-size: 1em !important;
+  font-size: ${theme.fontSizes.normal} !important;
   text-decoration: none;
   color: ${theme.colors.fontWhite};
 

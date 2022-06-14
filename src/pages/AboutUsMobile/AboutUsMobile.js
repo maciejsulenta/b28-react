@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
 
 export const AboutUsWrap = styled.div`
-height: fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,14 +30,15 @@ export const Text = styled.p`
   font-family: ${(props) => (props.lettering ? "Playfair Display" : "Nunito")};
   font-style: normal;
   font-weight: ${(props) => (props.lettering ? "800" : "500")};
-  font-size: ${(props) => (props.lettering ? "0.85em" : "0.8em")};
+  font-size: ${(props) => (props.lettering ? theme.fontSizes.normal : "0.8em")};
   text-align: center;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.02em;
   color: ${theme.colors.fontDark};
-  padding-bottom: ${(props) => (props.lettering ? ".5em" : "0")};
+  padding-bottom: ${(props) => (props.lettering ? "1em" : "0")};
+  line-height: 1em;
 
   @media screen and (min-width: 550px) {
-    font-size: ${(props) => (props.lettering ? "1em" : ".9em")};
+    font-size: ${(props) => (props.lettering ? "1.1em" : ".9em")};
   }
 `;
 export const Image = styled.div`

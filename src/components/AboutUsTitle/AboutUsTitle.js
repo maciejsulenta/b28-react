@@ -32,21 +32,24 @@ export const TitleWrap = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-family: "Playfair Display";
-  font-size: 2.6em;
-  font-weight: 400;
+  font-size: ${theme.fontSizes.big};
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 500;
   text-align: center;
-  letter-spacing: 0.015em;
-
+  user-select: none;
   color: ${theme.colors.fontWhite};
+  letter-spacing: 0.02em;
+  line-height: 1em;
+
   display: ${(props) => (props.mobile ? "block" : "none")};
   @media screen and (min-width: 768px) {
-    font-size: 4.5em;
+    font-size: ${theme.fontSizes.huge};
     text-align: left;
     white-space: nowrap;
     display: ${(props) => (props.mobile ? "none" : "block")};
   }
-  @media screen and (min-width: 960px) {
+  /* @media screen and (min-width: 960px) {
     font-size: 5em;
   }
   @media screen and (min-width: 1280px) {
@@ -54,5 +57,5 @@ export const Title = styled.h2`
   }
   @media screen and (min-width: 1600px) {
     font-size: 6em;
-  }
+  } */
 `;

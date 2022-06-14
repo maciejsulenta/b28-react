@@ -18,10 +18,10 @@ export const Text = styled.span`
   position: absolute;
   width: 100%;
   display: inline-block;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
-  /* letter-spacing: 0.015em; */
-  font-size: 4em;
+  letter-spacing: 0.02em;
+  font-size: ${theme.fontSizes.huge};
   text-align: center;
   user-select: none;
   color: ${theme.colors.opinionFont};

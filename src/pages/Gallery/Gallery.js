@@ -26,7 +26,6 @@ export const ImageContainer = styled(motion.div)`
   background-image: url(${(props) => props.img});
   background-size: cover;
   background-position: center;
-  /* box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.15); */
   z-index: 2;
   transition: all 0.4s ease;
 `;

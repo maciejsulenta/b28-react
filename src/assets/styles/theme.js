@@ -14,4 +14,10 @@ export const theme = {
     menuFifth: "#A4A4A4",
     opinionFont: "#CBCBCB",
   },
+  fontSizes: {
+    small: "0.7em",
+    normal: "1em",
+    big: "2em",
+    huge: "4.5em",
+  },
 };

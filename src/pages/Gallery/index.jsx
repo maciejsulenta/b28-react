@@ -2,13 +2,11 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import { galleryData } from "../../assets/data/galleryData";
-import Title from "../../components/GalleryTitle";
+import GalleryTitle from "../../components/GalleryTitle";
 import {
   GalleryWrap,
   Slide,
   ImageContainer,
-  TitleContainer,
-  TitleWrap,
 } from "./Gallery.js";
 const Gallery = () => {
   //horizontal scroll
@@ -68,7 +66,7 @@ const Gallery = () => {
         <Slide id="component">
           {galleryData.map((item) => (
             <ImageContainer
-              style={{ clipPath: "inset(0px 100% 0px 0px)" }}
+              style={{ clipPath: "inset(0px 100% 0px 0px)"}}
               whileInView={{
                 clipPath: "inset(0px 0px 0px 0px)",
               }}
@@ -81,7 +79,7 @@ const Gallery = () => {
             />
           ))}
         </Slide>
-        <Title />
+        <GalleryTitle />
       </GalleryWrap>
     </>
   );

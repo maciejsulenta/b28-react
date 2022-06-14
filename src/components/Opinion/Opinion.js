@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
+import { motion } from "framer-motion";
 
-export const OpinionContainer = styled.div`
-  width: 14em;
-  font-size: 0.88em;
+export const OpinionContainer = styled(motion.div)`
+  width: 10em;
   height: fit-content;
   color: ${theme.colors.opinionFont};
   position: relative;
@@ -11,21 +11,21 @@ export const OpinionContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: ${(props) => (props.opinion ? "1.5em" : "4em")};
-  @media screen and (min-width: 380px) {
-    font-size: 1em;
+  user-select: none;
+  transition: all 0.6s linear 0.1s;
+  @media screen and (min-width: 340px) {
+    width: 14em;
   }
-  @media screen and (min-width: 500px) {
-    font-size: 1.2em;
+  @media screen and (min-width: 550px) {
+    width: ${(props) => (props.first ? "18em" : "17em")};
   }
   @media screen and (min-width: 768px) {
-    font-size: 1em;
-    left: ${(props) => (props.opinion ? "-20%" : "20%")};
-    width: 16em;
+    transform: ${(props) =>
+      props.first ? "translateX(-5em)" : "translateX(5em)"};
   }
   @media screen and (min-width: 1280px) {
-    top: ${(props) => (props.opinion ? "0" : "-2em")};
-    margin-bottom: ${(props) => (props.opinion ? "2em" : "4em")};
+    transform: ${(props) =>
+      props.first ? "translateX(-10em)" : "translateX(10em)"};
   }
 `;
 
@@ -35,16 +35,19 @@ export const OpinionQuote = styled.p`
   left: ${(props) => props.left};
   font-style: italic;
   font-weight: 400;
-  font-size: 3.1em;
+  font-size: ${theme.fontSizes.big};
   line-height: 0.8em;
+  @media screen and (min-width: 768px) {
+    font-size: ${theme.fontSizes.huge};
+  }
 `;
 export const OpinionText = styled.p`
   font-family: "Playfair Display";
-  font-size: 1em;
+  font-size: ${theme.fontSizes.normal};
   font-weight: 400;
-  line-height: 0.95em;
+  line-height: 1em;
   text-align: center;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.02em;
   padding-top: 1em;
   color: ${theme.colors.opinionFont};
 `;

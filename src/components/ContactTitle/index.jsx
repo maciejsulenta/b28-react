@@ -1,5 +1,6 @@
 import React from "react";
-import { TitleWrap, Title } from "./ContactTitle";
+import { Title } from "../Title";
+import { TitleWrap } from "./ContactTitle";
 
 const ContactTitle = () => {
   return (

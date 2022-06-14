@@ -47,10 +47,10 @@ export const TextContainer = styled(motion.div)`
   align-items: center;
   gap: 0.5em;
   transform: translateY(3em);
-  transition: all 1s ease 0.5s;
+  transition: all .8s ease 0.4s;
 `;
 export const Text = styled.span`
-  font-size: ${(props) => (props.big ? "1.2em" : "0.7em")};
+  font-size: ${(props) => (props.big ? theme.fontSizes.normal : theme.fontSizes.small)};
   color: ${(props) =>
     props.big ? theme.colors.menuSecond : theme.colors.opinionFont};
   text-align: center;
@@ -64,7 +64,7 @@ export const Image = styled(motion.div)`
   background-image: url(${(props) => props.img});
   background-size: cover;
   background-position: center;
-  transition: all 1s ease 0.5s;
+  transition: all .8s ease 0.3s;
 `;
 export const Logo = styled(motion.div)`
   width: 7em;
@@ -73,7 +73,7 @@ export const Logo = styled(motion.div)`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transition: all 1s ease 0.7s;
+  transition: all .8s ease 0.4s;
 
   @media screen and (min-width: 960px) {
   }
@@ -87,7 +87,7 @@ export const Arrow = styled(motion.div)`
   transform: ${(props) =>
     props.left === "true" ? "rotate(17deg)" : "rotate(-17deg)"};
   z-index: 0;
-  transition: all 1.5s ease 0.5s;
+  transition: all 1.5s ease 0.2s;
   &:after {
     content: "";
     position: absolute;
