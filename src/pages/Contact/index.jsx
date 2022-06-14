@@ -1,13 +1,23 @@
 import React from "react";
 import ContactContent from "../../components/ContactContent";
-import ContactTitle from "../../components/ContactTitle";
 import { Container } from "../../components/Container";
-import Logo from "../../components/Logo";
+import { Title } from "../../components/Title";
+import { TitleWrap } from "./Contact";
 
 const Contact = () => {
   return (
     <Container vh="fit-content" contact>
-      <ContactTitle />
+      <TitleWrap
+        style={{ y: 50, opacity: 0 }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+      >
+        <Title>Tu nas</Title>
+        <Title>znajdziesz</Title>
+      </TitleWrap>
       <ContactContent />
     </Container>
   );
