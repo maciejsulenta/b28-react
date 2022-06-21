@@ -18,10 +18,9 @@ export const MobilePhoneContainer = styled(motion.div)`
   position: relative;
   background-color: ${(props) => props.bgc};
   width: 100%;
-  height: 35vh;
-  transform: translateY(-15%) skew(0deg, -7deg);
+  height: 35.5vh;
   margin-bottom: -3vh;
-  z-index: 5;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -29,7 +28,7 @@ export const MobilePhoneContainer = styled(motion.div)`
   align-items: center;
 `;
 export const MobileMenuLogo = styled.h2`
-  font-size: 9em;
+  font-size: 7em;
   font-family: "Wolfgang";
   font-weight: 400;
   background: linear-gradient(241.66deg, #595959 31.41%, #2e2e2e 65.83%);
@@ -41,25 +40,24 @@ export const MobileMenuLogo = styled.h2`
 `;
 export const MobileMenuPhone = styled.h3`
   font-family: "Playfair Display";
-  font-size: 1.2em;
+  font-size: 1.1em;
   letter-spacing: 5%;
-  font-weight: 600;
+  font-weight: 500;
   color: ${theme.colors.fontDark};
 `;
 export const MobileItemContainer = styled(motion.div)`
   position: relative;
   background-color: ${(props) => props.bgc};
   width: 100%;
-  height: 12vh;
-  transform: translateY(-15%) skew(0deg, -7deg);
+  height: 12.2vh;
   margin-top: -0.7vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Playfair Display";
-  font-size: 1.2em;
+  font-size: 1.1em;
   letter-spacing: 5%;
-  font-weight: 600;
+  font-weight: 500;
   color: ${theme.colors.fontDark};
   z-index: ${(props) => props.zi};
 
