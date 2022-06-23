@@ -15,8 +15,8 @@ import {
 } from "./AboutUsDesktop";
 const AboutUsDesktop = () => {
   return (
-    <Container vh="fit-content">
-      <AboutUsContainer>
+    <Container vh="fit-content" >
+      <AboutUsContainer name="aboutUs">
         <AboutUsWrap top>
           <TextContainer
             style={{ opacity: 0, y: "4em" }}

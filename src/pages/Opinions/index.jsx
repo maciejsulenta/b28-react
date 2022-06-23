@@ -4,7 +4,7 @@ import { Title } from "../../components/Title";
 import { TitleWrap, Wrap } from "./Opinions";
 const Opinions = () => {
   return (
-    <Container vh="fit-content" opinions>
+    <Container vh="fit-content" opinions >
       <TitleWrap
         style={{ opacity: 0, filter: "blur(10px)" }}
         whileInView={{

@@ -13,7 +13,7 @@ const AboutUsMobile = () => {
   return (
     <Container vh={"fit-content"}>
       <AboutUsTitle />
-      <AboutUsWrap>
+      <AboutUsWrap name="about">
         <Image img={ImgOne} topPos={"0em"} />
         <TextContainer>
           <TextWrap>

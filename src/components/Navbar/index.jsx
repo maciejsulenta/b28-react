@@ -4,6 +4,7 @@ import Facebook from "../../assets/images/facebook.svg";
 import Instagram from "../../assets/images/instagram.svg";
 import BurgerIcon from "../BurgerIcon";
 import MobileMenu from "../MobileMenu";
+import { animateScroll as scroll } from "react-scroll";
 import {
   NavbarContainer,
   LogoHeader,
@@ -21,12 +22,41 @@ const Navbar = () => {
     setisOpen(!isOpen);
   };
   return (
-    <NavbarContainer>
+    <NavbarContainer name="top">
       <LogoHeader>B28</LogoHeader>
       <NavWrap>
-        <MenuLink>O nas</MenuLink>
-        <MenuLink>Galeria</MenuLink>
-        <MenuLink>Kontakt</MenuLink>
+        <MenuLink
+          className="link"
+          spy={true}
+          offset={100}
+          smooth={true}
+          duration={500}
+          activeClass="active"
+          to="aboutUs"
+        >
+          O nas
+        </MenuLink>
+        <MenuLink
+          className="link"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          activeClass="active"
+          to="gallery"
+        >
+          Galeria
+        </MenuLink>
+        <MenuLink
+          className="link"
+          spy={true}
+          
+          offset={-100}
+          
+          activeClass="active"
+          to="contact"
+        >
+          Kontakt
+        </MenuLink>
       </NavWrap>
       <NavSocials>
         <NavSocial>

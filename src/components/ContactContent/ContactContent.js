@@ -41,7 +41,7 @@ export const ImageContainer = styled(motion.div)`
   z-index: 0;
   position: absolute;
   margin-top: -2.5em;
-  transition: all 0.5s linear 0.5s;
+  transition: all 0.5s ease 0.5s;
   @media screen and (min-width: 768px) {
     position: static;
     max-width: 260px;
@@ -64,9 +64,9 @@ export const InfoContainer = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: ${(props) => (props.left ? "20em" : "0")};
+  padding-top: ${(props) => (props.left ? "21em" : "0")};
   margin-bottom: 2em;
-  transition: all 0.5s ease 0.5s;
+  transition: all 0.5s ease 0.7s;
   @media screen and (min-width: 768px) {
     width: 25%;
     height: 60%;

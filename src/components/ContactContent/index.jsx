@@ -23,7 +23,7 @@ const ContactContent = () => {
       <ContactWrap>
         <InfoContainer
           left
-          style={{ y: 50, opacity: 0 }}
+          style={{ y: -50, opacity: 0 }}
           whileInView={{
             y: 0,
             opacity: 1,
@@ -44,12 +44,12 @@ const ContactContent = () => {
           </InfoWrap>
         </InfoContainer>
         <ImageContainer
-          style={{ clipPath: "inset(0 0 100% 0)" }}
-          whileInView={{ clipPath: "inset(0 0 0 0)" }}
+          style={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
         />
         <InfoContainer
-          style={{ y: 50, opacity: 0 }}
+          style={{ y: -50, opacity: 0 }}
           whileInView={{
             y: 0,
             opacity: 1,

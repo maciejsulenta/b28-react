@@ -8,7 +8,8 @@ import Logo from "./components/Logo";
 import AboutUsMobile from "./pages/AboutUsMobile";
 import AboutUsDesktop from "./pages/AboutUsDesktop";
 import Opinions from "./pages/Opinions";
-import Gallery from "./pages/Gallery";
+import GalleryDesktop from "./pages/GalleryDesktop";
+import GalleryMobile from "./pages/GalleryMobile";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 function App() {
@@ -23,7 +24,8 @@ function App() {
           <AboutUsMobile />
           <AboutUsDesktop />
           <Opinions />
-          <Gallery />
+          <GalleryDesktop />
+          <GalleryMobile/>
           <Contact />
           <Footer />
         </PagesContainer>
