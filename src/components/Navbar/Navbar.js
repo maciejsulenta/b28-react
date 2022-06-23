@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export const NavbarContainer = styled.div`
   height: 4em;
@@ -39,7 +40,7 @@ export const NavWrap = styled.nav`
     justify-self: center;
   }
 `;
-export const MenuLink = styled.a`
+export const MenuLink = styled(Link)`
   font-family: "Pirata One";
   font-size: 0.8em;
   text-decoration: none;

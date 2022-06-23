@@ -1,3 +1,4 @@
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 import { theme } from "../../assets/styles/theme";
 import {
   MobileMenuContainer,
@@ -5,8 +6,9 @@ import {
   MobileMenuLogo,
   MobileMenuPhone,
   MobileItemContainer,
+  ItemLink,
 } from "./MobileMenu";
-const MobileMenu = () => {
+const MobileMenu = ({setIsOpenHandler}) => {
   const menu = {
     hidden: {
       opacity: 0,
@@ -100,7 +102,7 @@ const MobileMenu = () => {
         bgc={theme.colors.menuFirst}
       >
         <MobileMenuLogo>B28</MobileMenuLogo>
-        <MobileMenuPhone>+48 797 676 873</MobileMenuPhone>
+        <MobileMenuPhone>+48 797 098 991</MobileMenuPhone>
       </MobilePhoneContainer>
       <MobileItemContainer
         whileTap={{ scale: 1.1 }}
@@ -109,7 +111,14 @@ const MobileMenu = () => {
         variants={item}
         bgc={theme.colors.menuSecond}
       >
-        Strona główna
+        <ItemLink
+          to="top"
+          offset={-500}
+          smooth={true}
+          onClick={setIsOpenHandler}
+        >
+          Strona główna
+        </ItemLink>
       </MobileItemContainer>
       <MobileItemContainer
         whileTap={{ scale: 1.1 }}
@@ -118,7 +127,14 @@ const MobileMenu = () => {
         variants={itemOdd}
         bgc={theme.colors.menuThird}
       >
-        O nas
+        <ItemLink
+          to="about"
+          offset={-500}
+          smooth={true}
+          onClick={setIsOpenHandler}
+        >
+          O nas
+        </ItemLink>
       </MobileItemContainer>
       <MobileItemContainer
         whileTap={{ scale: 1.1 }}
@@ -127,7 +143,14 @@ const MobileMenu = () => {
         variants={item}
         bgc={theme.colors.menuFourth}
       >
-        Galeria
+        <ItemLink
+          to="gallery"
+          offset={-500}
+          smooth={true}
+          onClick={setIsOpenHandler}
+        >
+          Galeria
+        </ItemLink>
       </MobileItemContainer>
       <MobileItemContainer
         whileTap={{ scale: 1.1 }}
@@ -136,7 +159,14 @@ const MobileMenu = () => {
         variants={itemOdd}
         bgc={theme.colors.menuFifth}
       >
-        Kontakt
+        <ItemLink
+          to="contact"
+          offset={-500}
+          smooth={true}
+          onClick={setIsOpenHandler}
+        >
+          Kontakt
+        </ItemLink>
       </MobileItemContainer>
     </MobileMenuContainer>
   );

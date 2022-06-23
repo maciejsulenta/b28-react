@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { theme } from "../../assets/styles/theme";
+import { Link } from "react-scroll";
 
 export const MobileMenuContainer = styled(motion.div)`
   position: fixed;
@@ -51,14 +52,6 @@ export const MobileItemContainer = styled(motion.div)`
   width: 100%;
   height: 12.2vh;
   margin-top: -0.7vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Playfair Display";
-  font-size: 1.1em;
-  letter-spacing: 5%;
-  font-weight: 500;
-  color: ${theme.colors.fontDark};
   z-index: ${(props) => props.zi};
 
   &:after {
@@ -82,4 +75,17 @@ export const MobileItemContainer = styled(motion.div)`
     border: 6vh solid transparent;
     border-right: 10vh solid ${(props) => props.bgc};
   }
+`;
+export const ItemLink = styled(Link)`
+  /* background-color: brown; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playfair Display";
+  font-size: 1.1em;
+  letter-spacing: 5%;
+  font-weight: 500;
+  color: ${theme.colors.fontDark};
 `;

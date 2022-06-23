@@ -6,9 +6,10 @@ import { TitleWrap } from "./Contact";
 
 const Contact = () => {
   return (
-    <Container vh="fit-content" contact>
+    <Container vh="fit-content" contact  >
       <TitleWrap
-        style={{ y: 50, opacity: 0 }}
+        name="contact"
+        style={{ y: -50, opacity: 0 }}
         whileInView={{
           y: 0,
           opacity: 1,

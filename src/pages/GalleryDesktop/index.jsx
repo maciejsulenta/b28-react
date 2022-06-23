@@ -7,8 +7,8 @@ import {
   GalleryWrap,
   Slide,
   ImageContainer,
-} from "./Gallery.js";
-const Gallery = () => {
+} from "./GalleryDesktop.js";
+const GalleryDesktop = () => {
   //horizontal scroll
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
@@ -61,7 +61,7 @@ const Gallery = () => {
 
   return (
     <>
-      <GalleryWrap id="container">
+      <GalleryWrap id="container" name="gallery">
         <Slide starter />
         <Slide id="component">
           {galleryData.map((item) => (
@@ -85,4 +85,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default GalleryDesktop;
