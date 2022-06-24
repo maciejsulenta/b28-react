@@ -12,6 +12,7 @@ import {
   MenuLink,
   NavSocials,
   NavSocial,
+  StyledLink,
   Image,
 } from "./Navbar";
 
@@ -49,9 +50,7 @@ const Navbar = () => {
         <MenuLink
           className="link"
           spy={true}
-          
           offset={-100}
-          
           activeClass="active"
           to="contact"
         >
@@ -60,10 +59,17 @@ const Navbar = () => {
       </NavWrap>
       <NavSocials>
         <NavSocial>
-          <Image src={Facebook} />
+          <StyledLink href="https://www.facebook.com/B28Tattoo" target="_blank">
+            <Image src={Facebook} />
+          </StyledLink>
         </NavSocial>
         <NavSocial>
-          <Image src={Instagram} />
+          <StyledLink
+            href="https://www.instagram.com/b28tattoo/"
+            target="_blank"
+          >
+            <Image src={Instagram} />
+          </StyledLink>
         </NavSocial>
       </NavSocials>
       <BurgerIcon setIsOpenHandler={setIsOpenHandler} isOpen={isOpen} />

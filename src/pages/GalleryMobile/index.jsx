@@ -91,7 +91,7 @@ const GalleryMobile = () => {
 
   return (
     
-      <GalleryContainer>
+      <GalleryContainer name="galleryMobile">
         <SlidesContainer className="slides-container">
           <Title>Nasze prace</Title>
           <SlidesWrap>
