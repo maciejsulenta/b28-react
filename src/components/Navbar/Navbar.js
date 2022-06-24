@@ -32,12 +32,11 @@ export const NavWrap = styled.nav`
   display: none;
   @media screen and (min-width: 768px) {
     width: 21em;
-    /* background-color: gray; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 1em;
     justify-self: center;
+    transform: translateX(1em);
   }
 `;
 export const MenuLink = styled(Link)`
@@ -48,16 +47,34 @@ export const MenuLink = styled(Link)`
   color: ${theme.colors.fontWhite};
   white-space: nowrap;
   cursor: pointer;
+  padding: 0.2em 0.7em;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    width: 50px;
+    height: 50px;
+    background-color: ${theme.colors.fontWhite};
+  }
+
+  &:hover {
+    color: ${theme.colors.fontDark};
+    padding: 0.2em 0.7em;
+
+    background-color: ${theme.colors.fontWhite};
+  }
 `;
 export const LogoHeader = styled(motion.p)`
   display: none;
   @media screen and (min-width: 768px) {
     font-family: "Wolfgang";
     font-size: 3em;
+    width: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1.33em;
     color: ${theme.colors.fontWhite};
     cursor: pointer;
   }
@@ -74,5 +91,8 @@ export const NavSocials = styled(motion.div)`
 `;
 export const NavSocial = styled(motion.div)`
   cursor: pointer;
+`;
+export const StyledLink = styled.a`
+  text-decoration: none;
 `;
 export const Image = styled.img``;
