@@ -22,7 +22,7 @@ const ContactContent = () => {
     <>
       <ContactWrap>
         <InfoContainer
-          left
+          left="true"
           style={{ y: -50, opacity: 0 }}
           whileInView={{
             y: 0,
@@ -30,15 +30,15 @@ const ContactContent = () => {
           }}
           viewport={{ once: true }}
         >
-          <InfoWrap left>
+          <InfoWrap left="true">
             <Text>Adres</Text>
             <Text info>ul. Wieniawska 4/26, 20-400 Lublin</Text>
           </InfoWrap>
-          <InfoWrap left>
+          <InfoWrap left="true">
             <Text>Godziny pracy</Text>
             <Text info>9-17</Text>
           </InfoWrap>
-          <InfoWrap left>
+          <InfoWrap left="true">
             <Text>Telefon</Text>
             <Text info>797 098 991</Text>
           </InfoWrap>

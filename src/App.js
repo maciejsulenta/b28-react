@@ -12,12 +12,14 @@ import GalleryDesktop from "./pages/GalleryDesktop";
 import GalleryMobile from "./pages/GalleryMobile";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import ScrollButton from "./components/ScrollButton";
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Navbar />
+        <ScrollButton/>
         <PagesContainer>
           <Landing />
           <Logo />

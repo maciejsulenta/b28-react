@@ -50,7 +50,9 @@ const Navbar = () => {
         <MenuLink
           className="link"
           spy={true}
+          smooth={true}
           offset={-100}
+          duration={1500}
           activeClass="active"
           to="contact"
         >

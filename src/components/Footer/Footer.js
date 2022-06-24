@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
+import { Link } from "react-scroll";
 import ArrowUpwardRoundedIcon from "@mui/icons-material/ArrowUpwardRounded";
 import { motion } from "framer-motion";
 export const FooterWrap = styled(motion.div)`
@@ -7,7 +8,7 @@ export const FooterWrap = styled(motion.div)`
   top: -2em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 2em;
   gap: 2em;
@@ -20,13 +21,16 @@ export const FooterWrap = styled(motion.div)`
     margin-top: 0em;
   }
 `;
-export const Button = styled.button`
+export const Button = styled(Link)`
   width: 5em;
   height: 5em;
   border: 3px solid ${theme.colors.fontWhite};
   border-radius: 50%;
   background: transparent;
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     transform: rotate(360deg) scale(1.1);
     cursor: pointer;
@@ -34,12 +38,12 @@ export const Button = styled.button`
   }
 
   @media screen and (min-width: 768px) {
-    width: 7em;
-    height: 7em;
+    width: 4em;
+    height: 4em;
     border: 5px solid ${theme.colors.fontWhite};
   }
 `;
 export const StyledArrowUpwardRoundedIcon = styled(ArrowUpwardRoundedIcon)`
-  font-size: 4em !important;
+  font-size: 2em !important;
   color: ${theme.colors.fontWhite};
 `;

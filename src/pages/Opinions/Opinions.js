@@ -5,6 +5,10 @@ export const TitleWrap = styled(motion.div)`
   width: 15em;
   margin-bottom: 2em;
   transition: all 0.6s linear 0.1s;
+
+  @media screen and (min-width: 768px) {
+    width: 10em;
+  }
 `;
 
 export const Wrap = styled.div`
