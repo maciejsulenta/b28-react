@@ -129,7 +129,7 @@ const MobileMenu = ({setIsOpenHandler}) => {
       >
         <ItemLink
           to="about"
-          offset={-500}
+          offset={-150}
           smooth={true}
           onClick={setIsOpenHandler}
         >
@@ -144,8 +144,8 @@ const MobileMenu = ({setIsOpenHandler}) => {
         bgc={theme.colors.menuFourth}
       >
         <ItemLink
-          to="gallery"
-          offset={-500}
+          to="galleryMobile"
+          offset={-50}
           smooth={true}
           onClick={setIsOpenHandler}
         >
@@ -161,7 +161,7 @@ const MobileMenu = ({setIsOpenHandler}) => {
       >
         <ItemLink
           to="contact"
-          offset={-500}
+          offset={-75}
           smooth={true}
           onClick={setIsOpenHandler}
         >
