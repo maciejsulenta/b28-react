@@ -24,8 +24,8 @@ function App() {
           <AboutUsMobile />
           <AboutUsDesktop />
           <Opinions />
+          <GalleryMobile />
           <GalleryDesktop />
-          <GalleryMobile/>
           <Contact />
           <Footer />
         </PagesContainer>
