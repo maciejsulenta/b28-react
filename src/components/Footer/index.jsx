@@ -15,7 +15,14 @@ const Footer = () => {
       viewport={{ once: true }}
     >
       <Title>to już koniec, umów się na wizytę</Title>
-      <Button>
+      <Button
+        to="top"
+        className="link"
+        spy={true}
+        offset={0}
+        smooth={true}
+        duration={1500}
+      >
         <StyledArrowUpwardRoundedIcon />
       </Button>
     </FooterWrap>

@@ -20,6 +20,7 @@ export const OpinionContainer = styled(motion.div)`
     width: ${(props) => (props.first ? "18em" : "17em")};
   }
   @media screen and (min-width: 768px) {
+    width: ${(props) => (props.first ? "15em" : "14em")};
     transform: ${(props) =>
       props.first ? "translateX(-5em)" : "translateX(5em)"};
   }
@@ -50,4 +51,8 @@ export const OpinionText = styled.p`
   letter-spacing: 0.02em;
   padding-top: 1em;
   color: ${theme.colors.opinionFont};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${theme.fontSizes.small};
+  }
 `;
