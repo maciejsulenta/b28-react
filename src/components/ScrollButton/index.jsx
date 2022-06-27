@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, StyledArrowUpwardRoundedIcon } from "./ScrollButton";
 
 const ScrollButton = () => {
+
+  
   return (
     <Container
       to="top"

@@ -9,7 +9,7 @@ const useScrollPosition = () => {
     updatePosition();
     return () => window.removeEventListener("scroll", updatePosition);
   }, []);
-  // console.log(scrollPosition);
+  console.log(scrollPosition);
 
   return scrollPosition;
 };
