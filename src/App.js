@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { GlobalStyles } from "./assets/styles/globalStyles";
 import { theme } from "./assets/styles/theme";
 import { ThemeProvider } from "styled-components";
@@ -13,24 +14,39 @@ import GalleryMobile from "./pages/GalleryMobile";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import ScrollButton from "./components/ScrollButton";
+import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+
 function App() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    let smoother = ScrollSmoother.create({
+      content: "#smooth-content",
+      effects: true,
+      smooth: 0.6,
+    });
+  }, []);
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Navbar />
-        <ScrollButton/>
-        <PagesContainer>
-          <Landing />
-          <Logo />
-          <AboutUsMobile />
-          <AboutUsDesktop />
-          <Opinions />
-          <GalleryMobile />
-          <GalleryDesktop />
-          <Contact />
-          <Footer />
-        </PagesContainer>
+        <div id="smooth-content">
+          <Navbar />
+          <PagesContainer>
+            <Landing />
+            <Logo />
+            <AboutUsMobile />
+            <AboutUsDesktop />
+            <Opinions />
+            <GalleryMobile />
+            <GalleryDesktop />
+            <Contact />
+            <Footer />
+          </PagesContainer>
+        </div>
+        <ScrollButton />
       </ThemeProvider>
     </>
   );

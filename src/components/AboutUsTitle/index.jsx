@@ -6,42 +6,56 @@ import {
   TitleWrap,
   Title,
 } from "./AboutUsTitle";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 const AboutUsTitle = () => {
-  const app = useRef();
-  const scrollContainer = useRef();
-  const skewConfigs = {
-    ease: 0.2,
-    current: 0,
-    previous: 0,
-    rounded: 0,
-  };
-
+ 
   useEffect(() => {
-    requestAnimationFrame(() => skewScrolling());
-  }, []);
-  const skewScrolling = () => {
-    skewConfigs.current = window.scrollY;
-    skewConfigs.previous +=
-      (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease;
-    skewConfigs.rounded = Math.round(skewConfigs.previous * 100) / 100;
-    const size = window.innerWidth;
-    const difference = skewConfigs.current - skewConfigs.rounded;
-    const acceleration = difference / size;
-    const velocity = +acceleration;
-    const skewX = velocity * 300;
-    scrollContainer.current.style.transform = `skewX(${skewX}deg`;
+    let proxy = { skew: 0 },
+      skewSetter = gsap.quickSetter(".skewElem", "skewX", "deg"),
+      clamp = gsap.utils.clamp(-20, 20);
+      
+    ScrollTrigger.create({
+      onUpdate: (self) => {
+        let skew = clamp(self.getVelocity() / -150);
 
-    requestAnimationFrame(() => skewScrolling());
-  };
-  const scrollPos = "-" + useScrollPosition() * 0.4 + "px";
+        if (Math.abs(skew) > Math.abs(proxy.skew)) {
+          proxy.skew = skew;
+          gsap.to(proxy, {
+            skew: 0,
+            duration: 0.8,
+            ease: "power3",
+            overwrite: true,
+            onUpdate: () => skewSetter(proxy.skew),
+          });
+        }
+      },
+    });
+
+    gsap.to(".skewElem", {
+      xPercent: -30,
+      ease: "none",
+      scrollTrigger: {
+        start: "top center",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
+  }, []);
+
   return (
-    <TitleContainerWrap ref={app}>
-      <TitleContainer posText={scrollPos} ref={scrollContainer}>
+    <TitleContainerWrap >
+      <TitleContainer className="skewElem">
         <TitleWrap mobile>
           <Title mobile>Poznaj nas lepiej</Title>
         </TitleWrap>
-        <Title>Poznaj nas lepiej Poznaj nas lepiej Poznaj nas lepiej</Title>
+        <Title>
+          Poznaj nas lepiej Poznaj nas lepiej Poznaj nas lepiej Poznaj nas
+          lepiej
+        </Title>
       </TitleContainer>
     </TitleContainerWrap>
   );

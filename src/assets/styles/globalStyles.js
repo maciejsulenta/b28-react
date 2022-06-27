@@ -22,8 +22,10 @@ body {
 a, button {
     font-family: "Helvetica",'Playfair Display';
     font-weight: 400;
-
 } 
+::-webkit-scrollbar {
+    display: none;
+}
 @font-face {
     font-family: "Wolfgang";
     src: url("/fonts/Wolfgang.ttf");

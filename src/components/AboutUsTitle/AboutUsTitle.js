@@ -7,17 +7,13 @@ export const TitleContainerWrap = styled.div`
     margin-bottom: -6em;
   }
 `;
-export const TitleContainer = styled.div.attrs((props) => ({
-  style: {
-    left: props.posText,
-  },
-}))`
+export const TitleContainer = styled.div`
   position: relative;
   height: fit-content;
   padding: 2em 0;
   width: 300%;
   background-color: transparent;
-  transition: all 0.01s linear;
+  /* transition: all 0.1s linear; */
   @media screen and (max-width: 767px) {
     transform: skew(0deg) !important;
     left: 0 !important;
