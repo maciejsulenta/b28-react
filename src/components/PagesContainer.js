@@ -1,10 +1,28 @@
 import styled from "styled-components";
 import { theme } from "../assets/styles/theme";
+import { keyframes } from "styled-components";
+
+const animateBg = keyframes`
+  0%{background-position:0% 0%}
+  25%{background-position:100% 0%}
+  25%{background-position:100% 100%}
+  50%{background-position:50% 100%}
+  75%{background-position:50% 50%}
+  100%{background-position:0% 0%}
+`;
 
 export const PagesContainer = styled.section`
   width: 100%;
   height: fit-content;
-  background-color: ${theme.colors.bgcDark};
+  /* background-color: ${theme.colors.bgcDark}; */
+  background: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0.85),
+      rgba(20, 20, 20, 0.85)
+    ),
+    url(https://ak.picdn.net/shutterstock/videos/1065839665/thumb/4.jpg);
+  z-index: -10;
+  animation: ${animateBg} 0.1s linear infinite alternate;
   overflow-x: hidden;
   @media screen and (min-width: 450px) {
     font-size: 22px;
