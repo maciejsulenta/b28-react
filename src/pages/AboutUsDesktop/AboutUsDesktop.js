@@ -46,11 +46,12 @@ export const TextContainer = styled(motion.div)`
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-  transform: translateY(3em);
-  transition: all .8s ease 0.4s;
+  transform: translateY(5em);
+  opacity: 0;
 `;
 export const Text = styled.span`
-  font-size: ${(props) => (props.big ? theme.fontSizes.normal : theme.fontSizes.small)};
+  font-size: ${(props) =>
+    props.big ? theme.fontSizes.normal : theme.fontSizes.small};
   color: ${(props) =>
     props.big ? theme.colors.menuSecond : theme.colors.opinionFont};
   text-align: center;
@@ -64,7 +65,11 @@ export const Image = styled(motion.div)`
   background-image: url(${(props) => props.img});
   background-size: cover;
   background-position: center;
-  transition: all .8s ease 0.3s;
+  /* transform: ${(props) =>
+    props.left ? "translate(-3em, -3em)" : "translate(3em, -3em)"};
+  opacity: 0; */
+  clip-path: inset(0px 0px 100% 0px);
+  transition: all 0.7s ease 0.5s;
 `;
 export const Logo = styled(motion.div)`
   width: 7em;
@@ -73,21 +78,21 @@ export const Logo = styled(motion.div)`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transition: all .8s ease 0.4s;
-
-  @media screen and (min-width: 960px) {
-  }
+  opacity: 0;
+  /* transform: translateY(2em); */
 `;
 export const Arrow = styled(motion.div)`
   width: 60vw;
   height: 10em;
   position: absolute;
-  top: 12em;
+  top: 4em;
+  left: ${(props) => props.l};
+  right: ${(props) => props.r};
   background-color: ${theme.colors.menuSecond};
   transform: ${(props) =>
     props.left === "true" ? "rotate(17deg)" : "rotate(-17deg)"};
   z-index: 0;
-  transition: all 1.5s ease 0.2s;
+  /* transition: all 1.5s ease 0.2s; */
   &:after {
     content: "";
     position: absolute;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const LandingTitleWrap = styled.div`
   height: 22.5em;
@@ -11,13 +12,20 @@ export const LandingTitleWrap = styled.div`
   /* background-color: brown; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
-    height: 18em;
+    height: 20em;
     width: 90%;
     max-width: 1720px;
-    top: 45%;
+    top: 50%;
   }
+`;
+export const TitleWrap = styled(motion.div)`
+  position: relative;
+  /* background-color: cadetblue; */
+  width: 100%;
+  height: 100%;
 `;
 export const StyledLandingTitle = styled.h1`
   font-family: "Wolfgang";
@@ -54,7 +62,7 @@ export const StyledLandingTitle = styled.h1`
     top: ${(props) => (props.secondary ? "79%" : "42%")};
   }
   @media screen and (min-width: 768px) {
-    top: 60%;
+    top: 55%;
     left: ${(props) => (props.secondary ? "65%" : "22%")};
     font-size: 12em;
   }

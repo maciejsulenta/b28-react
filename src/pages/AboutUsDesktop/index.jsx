@@ -15,16 +15,17 @@ import {
 } from "./AboutUsDesktop";
 const AboutUsDesktop = () => {
   return (
-    <Container vh="fit-content" >
+    <Container vh="fit-content">
       <AboutUsContainer name="aboutUs">
         <AboutUsWrap top>
           <TextContainer
-            style={{ opacity: 0, y: "4em" }}
-            whileInView={{
-              opacity: 1,
-              y: "3em",
-            }}
-            viewport={{ once: true }}
+          id="aboutText"
+          // style={{ opacity: 0, y: "4em" }}
+          // whileInView={{
+          //   opacity: 1,
+          //   y: "3em",
+          // }}
+          // viewport={{ once: true }}
           >
             <Text big>Studio Projekt B28</Text>
             <Text>
@@ -38,47 +39,55 @@ const AboutUsDesktop = () => {
         </AboutUsWrap>
         <AboutUsWrap bgc>
           <Image
+          left="true"
+            className="aboutImg"
             img={ImageTwo}
-            style={{ clipPath: "inset(0px 0px 100% 0px)" }}
-            whileInView={{
-              clipPath: "inset(0px 0px 0px 0px)",
-            }}
-            viewport={{ once: true }}
+            // style={{ clipPath: "inset(0px 0px 100% 0px)" }}
+            // whileInView={{
+            //   clipPath: "inset(0px 0px 0px 0px)",
+            // }}
+            // viewport={{ once: true }}
           />
           <Logo
+            id="aboutLogo"
             img={LogoPic}
-            style={{ opacity: 0, y: "0em" }}
-            whileInView={{
-              opacity: 1,
-              y: "2em",
-            }}
-            viewport={{ once: true }}
+            // style={{ opacity: 0, y: "0em" }}
+            // whileInView={{
+            //   opacity: 1,
+            //   y: "2em",
+            // }}
+            // viewport={{ once: true }}
           />
           <Image
+            className="aboutImg"
             img={ImageOne}
-            style={{ clipPath: "inset(0px 0px 100% 0px)" }}
-            whileInView={{
-              clipPath: "inset(0px 0px 0px 0px)",
-            }}
-            viewport={{ once: true }}
+            // style={{ clipPath: "inset(0px 0px 100% 0px)" }}
+            // whileInView={{
+            //   clipPath: "inset(0px 0px 0px 0px)",
+            // }}
+            // viewport={{ once: true }}
           />
         </AboutUsWrap>
         <Arrow
+          id="arrowleft"
           left="true"
-          style={{ top: "4em", left: "-61vw" }}
-          whileInView={{
-            top: "12em",
-            left: "-6.6vw",
-          }}
-          viewport={{ once: true }}
+          l="-70vw"
+          // style={{ top: "4em", left: "-61vw" }}
+          // whileInView={{
+          //   top: "12em",
+          //   left: "-6.6vw",
+          // }}
+          // viewport={{ once: true }}
         />
         <Arrow
-          style={{ top: "4em", right: "-61vw" }}
-          whileInView={{
-            top: "12em",
-            right: "-6.6vw",
-          }}
-          viewport={{ once: true }}
+          id="arrowright"
+          r="-70vw"
+          // style={{ top: "4em", right: "-61vw" }}
+          // whileInView={{
+          //   top: "12em",
+          //   right: "-6.6vw",
+          // }}
+          // viewport={{ once: true }}
         />
       </AboutUsContainer>
     </Container>
