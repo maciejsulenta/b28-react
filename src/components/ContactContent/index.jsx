@@ -1,6 +1,4 @@
 import React from "react";
-import Instagram from "../../assets/images/instagramDark.svg";
-import Facebook from "../../assets/images/facebookDark.svg";
 import LogoB28 from "../../assets/images/logo.svg";
 
 import {
@@ -10,7 +8,6 @@ import {
   InfoContainer,
   InfoWrap,
   StyledLink,
-  SocialIcon,
   Text,
   Logo,
   StyledFacebookOutlined,
@@ -23,12 +20,13 @@ const ContactContent = () => {
       <ContactWrap>
         <InfoContainer
           left="true"
-          style={{ y: -50, opacity: 0 }}
-          whileInView={{
-            y: 0,
-            opacity: 1,
-          }}
-          viewport={{ once: true }}
+          className="contactInfo"
+          // style={{ y: -50, opacity: 0 }}
+          // whileInView={{
+          //   y: 0,
+          //   opacity: 1,
+          // }}
+          // viewport={{ once: true }}
         >
           <InfoWrap left="true">
             <Text>Adres</Text>
@@ -44,17 +42,19 @@ const ContactContent = () => {
           </InfoWrap>
         </InfoContainer>
         <ImageContainer
-          style={{ y: -50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
+          id="contactImage"
+          // style={{ y: -50, opacity: 0 }}
+          // whileInView={{ y: 0, opacity: 1 }}
+          // viewport={{ once: true }}
         />
         <InfoContainer
-          style={{ y: -50, opacity: 0 }}
-          whileInView={{
-            y: 0,
-            opacity: 1,
-          }}
-          viewport={{ once: true }}
+          className="contactInfo"
+          // style={{ y: -50, opacity: 0 }}
+          // whileInView={{
+          //   y: 0,
+          //   opacity: 1,
+          // }}
+          // viewport={{ once: true }}
         >
           <InfoWrap>
             <StyledLink
@@ -94,14 +94,15 @@ const ContactContent = () => {
           </InfoWrap>
         </InfoContainer>
         <ContactCone
-          style={{ clipPath: "polygon(0 40%, 5% 50%, 5% 50%, 0 60%)" }}
-          whileInView={{
-            clipPath: "polygon(0 0, 100% 30%, 100% 70%, 0% 100%)",
-          }}
-          viewport={{ once: true }}
+          id="contactCone"
+          // style={{ clipPath: "polygon(0 40%, 5% 50%, 5% 50%, 0 60%)" }}
+          // whileInView={{
+          //   clipPath: "polygon(0 0, 100% 30%, 100% 70%, 0% 100%)",
+          // }}
+          // viewport={{ once: true }}
         />
       </ContactWrap>
-      <Logo src={LogoB28} />
+      <Logo src={LogoB28} id="contactLogo" />
     </>
   );
 };

@@ -19,16 +19,17 @@ export const ContactWrap = styled.div`
   }
 `;
 export const ContactCone = styled(motion.div)`
-  transition: all 0.5s ease;
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
+    left: -10%;
     width: 100%;
     height: 80%;
-    clip-path: polygon(0 0, 100% 30%, 100% 70%, 0% 100%);
     background-color: ${theme.colors.menuSecond};
     z-index: 0;
+    clip-path: polygon(0 40%, 5% 50%, 5% 50%, 0 60%);
+    transition: all 0.5s ease;
   }
 `;
 export const ImageContainer = styled(motion.div)`
@@ -41,7 +42,9 @@ export const ImageContainer = styled(motion.div)`
   z-index: 0;
   position: absolute;
   margin-top: -2.5em;
-  transition: all 0.5s ease 0.5s;
+  transform: translateY(50px);
+  opacity: 0;
+  /* transition: all 0.5s ease 0.5s; */
   @media screen and (min-width: 768px) {
     position: static;
     max-width: 260px;
@@ -66,7 +69,9 @@ export const InfoContainer = styled(motion.div)`
   align-items: center;
   padding-top: ${(props) => (props.left ? "21em" : "0")};
   margin-bottom: 2em;
-  transition: all 0.5s ease 0.7s;
+  opacity: 0;
+  transform: translateY(-50px);
+  /* transition: all 0.5s ease 0.7s; */
   @media screen and (min-width: 768px) {
     width: 25%;
     height: 60%;
@@ -84,7 +89,7 @@ export const InfoWrap = styled.div`
   align-items: center;
   margin-bottom: 0.8em;
   font-size: 0.9em;
-  transition: all 1s linear;
+  /* transition: all 1s linear; */
   @media screen and (min-width: 768px) {
     width: ${(props) => (props.left ? "60%" : "fit-content")};
     font-size: 0.6em;

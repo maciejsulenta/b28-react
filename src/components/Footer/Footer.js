@@ -13,7 +13,9 @@ export const FooterWrap = styled(motion.div)`
   padding: 2em;
   gap: 2em;
   margin: 4em auto 0 auto;
-  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  /* transition: all 0.5s ease; */
   @media screen and (min-width: 550px) {
     width: 26em;
   }

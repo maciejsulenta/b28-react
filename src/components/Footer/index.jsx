@@ -8,19 +8,19 @@ import {
 } from "./Footer";
 
 const Footer = () => {
-  useEffect(() => {
-    let containerPosition = document
-      .getElementById("siema")
-      .getBoundingClientRect().top;
-      console.log(containerPosition);
-  }, []);
+  // useEffect(() => {
+  //   let containerPosition = document
+  //     .getElementById("siema")
+  //     .getBoundingClientRect().top;
+  //   console.log(containerPosition);
+  // }, []);
 
   return (
     <FooterWrap
-      id="siema"
-      style={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      // style={{ opacity: 0, y: 50 }}
+      // whileInView={{ opacity: 1, y: 0 }}
+      // viewport={{ once: true }}
+      id="footer"
     >
       <Title>to już koniec, umów się na wizytę</Title>
       <Button

@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 export const TitleWrap = styled(motion.div)`
   width: 15em;
   margin-bottom: 2em;
-  transition: all 0.6s linear 0.1s;
-
+  opacity: 0;
   @media screen and (min-width: 768px) {
     width: 10em;
+    transform: translateY(2em);
   }
 `;
 

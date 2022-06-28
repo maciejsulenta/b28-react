@@ -9,12 +9,13 @@ const Contact = () => {
     <Container vh="fit-content" contact  >
       <TitleWrap
         name="contact"
-        style={{ y: -50, opacity: 0 }}
-        whileInView={{
-          y: 0,
-          opacity: 1,
-        }}
-        viewport={{ once: true }}
+        id="contactTitle"
+        // style={{ y: -50, opacity: 0 }}
+        // whileInView={{
+        //   y: 0,
+        //   opacity: 1,
+        // }}
+        // viewport={{ once: true }}
       >
         <Title>Tu nas</Title>
         <Title>znajdziesz</Title>
