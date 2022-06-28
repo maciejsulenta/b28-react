@@ -6,17 +6,19 @@ const Opinions = () => {
   return (
     <Container vh="fit-content" opinions>
       <TitleWrap
-        style={{ opacity: 0, filter: "blur(10px)" }}
-        whileInView={{
-          opacity: 1,
-          filter: "blur(0px)",
-        }}
-        viewport={{ once: true }}
+        id="opinionsTitle"
+        // style={{ opacity: 0, filter: "blur(10px)" }}
+        // whileInView={{
+        //   opacity: 1,
+        //   filter: "blur(0px)",
+        // }}
+        // viewport={{ once: true }}
       >
         <Title opinions>Opinie naszych klientów</Title>
       </TitleWrap>
       <Wrap>
         <Opinion
+          
           first="true"
           t={"-.2em"}
           l={"-.4em"}
@@ -25,6 +27,7 @@ const Opinions = () => {
           }
         />
         <Opinion
+          
           t={"99%"}
           l={"99%"}
           text={

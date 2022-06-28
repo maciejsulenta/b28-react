@@ -31,7 +31,6 @@ function App() {
     smoother.effects("#logobg", {
       speed: 0.5,
     });
-
     gsap.to("#arrowleft", {
       scrollTrigger: {
         trigger: "#arrowleft",
@@ -74,13 +73,73 @@ function App() {
       duration: 0.6,
       delay: 0.3,
     });
+    gsap.to("#opinionsTitle", {
+      scrollTrigger: {
+        trigger: "#opinionsTitle",
+      },
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      delay: 0.3,
+    });
+    gsap.to(".opinion", {
+      scrollTrigger: {
+        trigger: ".opinion",
+      },
+      opacity: 1,
+      duration: 0.8,
+      delay: 0.3,
+    });
+    gsap.to("#contactTitle", {
+      scrollTrigger: {
+        trigger: "#contactTitle",
+      },
+      y: 0,
+      opacity: 1,
+      duration: 0.7,
+      delay: 0.2,
+    });
+    gsap.to(".contactInfo", {
+      scrollTrigger: {
+        trigger: ".contactInfo",
+      },
+      y: 0,
+      opacity: 1,
+      duration: 0.5,
+      delay: 0.9,
+    });
+    gsap.to("#contactImage", {
+      scrollTrigger: {
+        trigger: "#contactImage",
+      },
+      y: 0,
+      opacity: 1,
+      duration: 0.5,
+      delay: 0.7,
+    });
+    gsap.to("#contactCone", {
+      scrollTrigger: {
+        trigger: "#contactCone",
+      },
+      clipPath: "polygon(0 0, 100% 30%, 100% 70%, 0% 100%)",
+      left: 0,
+    });
+    gsap.to("#footer", {
+      scrollTrigger: {
+        trigger: "#footer",
+      },
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      delay: 0.5,
+    });
   }, []);
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
+        <Navbar />
         <div id="smooth-content">
-          <Navbar />
           <PagesContainer>
             <Landing />
             <Logo />

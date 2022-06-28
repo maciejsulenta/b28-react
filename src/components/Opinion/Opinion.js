@@ -12,7 +12,8 @@ export const OpinionContainer = styled(motion.div)`
   justify-content: center;
   align-items: center;
   user-select: none;
-  transition: all 0.6s linear 0.1s;
+  opacity: 0;
+  /* transition: all 0.6s linear 0.1s; */
   @media screen and (min-width: 340px) {
     width: 14em;
   }
