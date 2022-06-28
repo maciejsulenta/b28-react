@@ -17,8 +17,8 @@ export const PagesContainer = styled.section`
   /* background-color: ${theme.colors.bgcDark}; */
   background: linear-gradient(
       to right,
-      rgba(20, 20, 20, 0.85),
-      rgba(20, 20, 20, 0.85)
+      rgba(20, 20, 20, 0.90),
+      rgba(20, 20, 20, 0.90)
     ),
     url(https://ak.picdn.net/shutterstock/videos/1065839665/thumb/4.jpg);
   z-index: -10;

@@ -5,6 +5,7 @@ import Instagram from "../../assets/images/instagram.svg";
 import BurgerIcon from "../BurgerIcon";
 import MobileMenu from "../MobileMenu";
 import { animateScroll as scroll } from "react-scroll";
+import gsap from "gsap";
 import {
   NavbarContainer,
   LogoHeader,
@@ -22,6 +23,8 @@ const Navbar = () => {
     // console.log(`${isOpen}`);
     setisOpen(!isOpen);
   };
+
+
   return (
     <NavbarContainer name="top">
       <LogoHeader>B28</LogoHeader>

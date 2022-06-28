@@ -13,7 +13,7 @@ export const LogoContainer = styled.div`
   /* background-color: red; */
   @media screen and (min-width: 768px) {
     width: 60%;
-    top: 65vh;
+    top: 137vh;
   }
 `;
 export const Image = styled.img`
