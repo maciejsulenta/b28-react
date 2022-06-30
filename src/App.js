@@ -133,6 +133,19 @@ function App() {
       duration: 0.6,
       delay: 0.5,
     });
+
+    gsap.to("#scrollButton", {
+      scrollTrigger: {
+        trigger: "#aboutText",
+        start: "bottom bottom",
+        endTrigger: "#footer",
+        end: "top bottom",
+        toggleActions: "play reverse restart reverse",
+      },
+      left: "1em",
+      opacity: 1,
+      duration: 0.2,
+    });
   }, []);
   return (
     <>
@@ -159,3 +172,5 @@ function App() {
 }
 
 export default App;
+
+// "play reverse restart none"
