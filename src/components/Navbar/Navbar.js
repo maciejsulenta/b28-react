@@ -47,23 +47,26 @@ export const MenuLink = styled(Link)`
   color: ${theme.colors.fontWhite};
   white-space: nowrap;
   cursor: pointer;
-  padding: 0.2em 0.7em;
+  padding: 0.25em 0.7em;
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
-  &:before {
-    width: 50px;
-    height: 50px;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 3px;
     background-color: ${theme.colors.fontWhite};
+    transition: all 0.3s ease;
+    clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
   }
 
-  &:hover {
-    color: ${theme.colors.fontDark};
-    padding: 0.2em 0.7em;
-
-    background-color: ${theme.colors.fontWhite};
+  &:hover:after {
+    width: 80%;
   }
 `;
 export const LogoHeader = styled(motion.p)`
