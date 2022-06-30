@@ -1,14 +1,11 @@
 import { useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/all";
+
 import {
   StyledLandingTitle,
   TitleWrap,
   LandingTitleWrap,
 } from "./LandingTitle";
 import { keyframes } from "styled-components";
-import { useEffect } from "react";
-import { red } from "@mui/material/colors";
 const LandingTitle = () => {
   const ref = useRef();
   const b28Gradient = keyframes`
@@ -34,35 +31,6 @@ const LandingTitle = () => {
       }
     `;
 
-  // let first = gsap.timeline({
-  //   defaults: {
-  //     ease: "inOut",
-  //     delay: 0.25,
-  //     stagger: 0.2,
-  //   },
-  //   repeat: -1,
-  //   onStart() {
-  //     gsap.set(ref.current, {
-  //       autoAlpha: 1,
-  //     });
-  //   },
-  // });
-
-  // first
-  //   .from(".landing-title", {
-  //     skewY: 6,
-  //     duration: 1,
-  //     yPercent: 150,
-  //   })
-  //   .to(
-  //     ".landing-title",
-  //     {
-  //       skewY: -5,
-  //       yPercent: -150,
-  //     },
-  //     "+=2"
-  //   );
-
   return (
     <LandingTitleWrap ref={ref}>
       <TitleWrap
@@ -71,18 +39,12 @@ const LandingTitle = () => {
         whileInView={{
           skew: "0deg, 0deg",
           y: 0,
-          transition: { duration: 2, delay: 1, type: "spring" },
+          transition: { duration: 2, delay: 4, type: "spring" },
         }}
         viewport={{ once: true }}
       >
-        <StyledLandingTitle anim={b28Gradient} className="landing-title">
-          B28
-        </StyledLandingTitle>
-        <StyledLandingTitle
-          secondary
-          anim={studioGradient}
-          className="landing-title"
-        >
+        <StyledLandingTitle anim={b28Gradient}>B28</StyledLandingTitle>
+        <StyledLandingTitle secondary anim={studioGradient}>
           studio
         </StyledLandingTitle>
       </TitleWrap>

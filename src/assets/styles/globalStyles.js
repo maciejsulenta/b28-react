@@ -4,8 +4,6 @@ export const GlobalStyles = createGlobalStyle`
 html {
 box-sizing: border-box;
 font-size: 20px;
-/* scroll-behavior: smooth; */
-
 }
 
 *, *::after, *::before {
@@ -16,7 +14,6 @@ padding: 0;
 
 body {
     font-family: 'Playfair Display', sans-serif;
-    /* background-color: #555; */
 }
 
 a, button {
@@ -25,6 +22,9 @@ a, button {
 } 
 ::-webkit-scrollbar {
     display: none;
+}
+.no-scroll {
+    overflow: hidden;
 }
 @font-face {
     font-family: "Wolfgang";

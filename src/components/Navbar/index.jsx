@@ -4,8 +4,6 @@ import Facebook from "../../assets/images/facebook.svg";
 import Instagram from "../../assets/images/instagram.svg";
 import BurgerIcon from "../BurgerIcon";
 import MobileMenu from "../MobileMenu";
-import { animateScroll as scroll } from "react-scroll";
-import gsap from "gsap";
 import {
   NavbarContainer,
   LogoHeader,
@@ -22,11 +20,23 @@ const Navbar = () => {
   const setIsOpenHandler = () => {
     // console.log(`${isOpen}`);
     setisOpen(!isOpen);
+
+    isOpen
+      ? document.body.classList.remove("no-scroll")
+      : document.body.classList.add("no-scroll");
   };
 
-
   return (
-    <NavbarContainer name="top">
+    <NavbarContainer
+      name="top"
+      style={{ opacity: 0, y: -20 }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition: { duration: 1, delay: 3.5, type: "spring" },
+      }}
+      viewport={{ once: true }}
+    >
       <LogoHeader>B28</LogoHeader>
       <NavWrap>
         <MenuLink

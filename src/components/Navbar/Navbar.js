@@ -3,7 +3,7 @@ import { theme } from "../../assets/styles/theme";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-export const NavbarContainer = styled.div`
+export const NavbarContainer = styled(motion.div)`
   height: 4em;
   width: 100%;
   position: absolute;
@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div`
   }
 `;
 
-export const NavWrap = styled.nav`
+export const NavWrap = styled(motion.nav)`
   display: none;
   @media screen and (min-width: 768px) {
     width: 21em;
@@ -36,7 +36,7 @@ export const NavWrap = styled.nav`
     justify-content: space-around;
     align-items: center;
     justify-self: center;
-    transform: translateX(1em);
+    /* transform: translateX(1em); */
   }
 `;
 export const MenuLink = styled(Link)`
