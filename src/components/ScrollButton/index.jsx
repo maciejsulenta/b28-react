@@ -1,19 +1,26 @@
-import React, {useEffect} from "react";
-import { Container, StyledArrowUpwardRoundedIcon } from "./ScrollButton";
+import React from "react";
+import { Container, Wrap, StyledArrowUpwardRoundedIcon } from "./ScrollButton";
 
 const ScrollButton = () => {
-
-  
   return (
     <Container
-      to="top"
-      className="link"
-      spy={true}
-      offset={0}
-      smooth={true}
-      duration={1500}
+      whileInView={{
+        left: "1em",
+        opacity: 1,
+        transition: { duration: 1, delay: 3.5, type: "spring" },
+      }}
+      viewport={{ once: true }}
     >
-      <StyledArrowUpwardRoundedIcon />
+      <Wrap
+        to="top"
+        className="link"
+        spy={true}
+        offset={0}
+        smooth={true}
+        duration={1500}
+      >
+        <StyledArrowUpwardRoundedIcon />
+      </Wrap>
     </Container>
   );
 };

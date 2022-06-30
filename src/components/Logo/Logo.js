@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(motion.div)`
   width: 80%;
   z-index: 0;
   position: absolute;

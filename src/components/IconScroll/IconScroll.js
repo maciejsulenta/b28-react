@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import { theme } from "../assets/styles/theme";
+import { theme } from "../../assets/styles/theme";
+import { motion } from "framer-motion";
 
 const colorSlide = keyframes`
  0% { background-position: 0% 100%; }
@@ -101,12 +102,13 @@ const nudgeMouse = keyframes`
   80% { transform: translateY(8px); }
   90% { transform: translateY(0); }
 `;
-
-export const IconScroll = styled.div`
+export const IconScrollContainer = styled(motion.div)`
+  position: absolute;
+  bottom: 5%;
+`;
+export const IconScrollContent = styled.div`
   background: transparent
     linear-gradient(transparent 0%, transparent 50%, #ddd 50%, #ddd 100%);
-  position: relative;
-  top: 75%;
   width: 0.975em;
   height: 1.725em;
   border-radius: 2.5em;

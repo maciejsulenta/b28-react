@@ -1,30 +1,37 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { theme } from "../../assets/styles/theme";
 import { Link } from "react-scroll";
 import ArrowUpwardRoundedIcon from "@mui/icons-material/ArrowUpwardRounded";
-
-export const Container = styled(Link)`
-display: none;
+export const Container = styled(motion.div)`
+  display: none;
   @media screen and (min-width: 768px) {
+    display: block;
     position: fixed;
-    left: 1em;
+    left: 0;
     bottom: 1em;
     width: 3em;
     height: 3em;
     border: 3px solid ${theme.colors.fontWhite};
     border-radius: 50%;
     background: transparent;
-    transition: all 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 999;
     mix-blend-mode: difference;
-    &:hover {
-      transform: rotate(360deg) scale(1.1);
-      cursor: pointer;
-      background: rgba(255, 255, 255, 0.1);
-    }
+    opacity: 0;
+  }
+`;
+export const Wrap = styled(Link)`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  &:hover {
+    transform: rotate(360deg) scale(1.1);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
   }
 `;
 export const StyledArrowUpwardRoundedIcon = styled(ArrowUpwardRoundedIcon)`
