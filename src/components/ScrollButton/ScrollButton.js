@@ -8,7 +8,7 @@ export const Container = styled(motion.div)`
   @media screen and (min-width: 768px) {
     display: block;
     position: fixed;
-    left: 0;
+    left: -1em;
     bottom: 1em;
     width: 3em;
     height: 3em;
