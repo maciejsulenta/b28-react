@@ -36,7 +36,7 @@ export const NavWrap = styled(motion.nav)`
     justify-content: space-around;
     align-items: center;
     justify-self: center;
-    /* transform: translateX(1em); */
+    transform: translateX(1em);
   }
 `;
 export const MenuLink = styled(Link)`
