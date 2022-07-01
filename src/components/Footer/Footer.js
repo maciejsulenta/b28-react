@@ -26,26 +26,43 @@ export const FooterWrap = styled(motion.div)`
 export const Button = styled(Link)`
   width: 5em;
   height: 5em;
+  position: relative;
   border: 3px solid ${theme.colors.fontWhite};
   border-radius: 50%;
   background: transparent;
   transition: all 0.5s ease;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  overflow: hidden;
   &:hover {
-    transform: rotate(360deg) scale(1.1);
-    cursor: pointer;
+    transform: scale(1.1);
     background: rgba(255, 255, 255, 0.1);
   }
-
   @media screen and (min-width: 768px) {
     width: 4em;
     height: 4em;
     border: 5px solid ${theme.colors.fontWhite};
   }
 `;
+export const Wrap = styled.div`
+  position: absolute;
+  top: calc(50% - 1em);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.7em;
+  transition: all 0.5s ease;
+  ${Button}:hover & {
+    transform: translate(-50%, -60%);
+  }
+`;
 export const StyledArrowUpwardRoundedIcon = styled(ArrowUpwardRoundedIcon)`
+  position: relative;
   font-size: 2em !important;
   color: ${theme.colors.fontWhite};
 `;

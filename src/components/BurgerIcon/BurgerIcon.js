@@ -17,7 +17,6 @@ export const BurgerContainer = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 999;
-  cursor: pointer;
   overflow: hidden;
   gap: 10px;
 `;
