@@ -18,23 +18,41 @@ export const Container = styled(motion.div)`
     z-index: 999;
     mix-blend-mode: difference;
     opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `;
 export const Wrap = styled(Link)`
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease;
   border-radius: 50%;
+  transition: all 0.5s ease;
   &:hover {
-    transform: rotate(360deg) scale(1.1);
-    cursor: pointer;
     background: rgba(255, 255, 255, 0.1);
   }
 `;
+export const ArrowWrap = styled.div`
+  position: absolute;
+  top: calc(50% - 1em);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+  transition: all 0.5s ease;
+
+  ${Wrap}:hover & {
+    transform: translate(-50%, -60%);
+  }
+`;
+
 export const StyledArrowUpwardRoundedIcon = styled(ArrowUpwardRoundedIcon)`
   font-size: 2em !important;
   color: ${theme.colors.fontWhite};
+  /* background-color: cadetblue; */
 `;

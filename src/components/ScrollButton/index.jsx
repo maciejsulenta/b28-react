@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Wrap, StyledArrowUpwardRoundedIcon } from "./ScrollButton";
+import { Container, Wrap, ArrowWrap, StyledArrowUpwardRoundedIcon } from "./ScrollButton";
 
 const ScrollButton = () => {
   return (
@@ -14,13 +14,16 @@ const ScrollButton = () => {
     >
       <Wrap
         to="top"
-        className="link"
+        className="link hover"
         spy={true}
         offset={0}
         smooth={true}
         duration={1500}
       >
+        <ArrowWrap>
         <StyledArrowUpwardRoundedIcon />
+        <StyledArrowUpwardRoundedIcon />
+        </ArrowWrap>
       </Wrap>
     </Container>
   );

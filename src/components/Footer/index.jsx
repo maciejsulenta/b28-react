@@ -4,6 +4,7 @@ import {
   FooterWrap,
   Text,
   Button,
+  Wrap,
   StyledArrowUpwardRoundedIcon,
 } from "./Footer";
 
@@ -25,13 +26,16 @@ const Footer = () => {
       <Title>to już koniec, umów się na wizytę</Title>
       <Button
         to="top"
-        className="link"
+        className="link hover"
         spy={true}
         offset={0}
         smooth={true}
         duration={1500}
       >
-        <StyledArrowUpwardRoundedIcon />
+        <Wrap>
+          <StyledArrowUpwardRoundedIcon />
+          <StyledArrowUpwardRoundedIcon />
+        </Wrap>
       </Button>
     </FooterWrap>
   );

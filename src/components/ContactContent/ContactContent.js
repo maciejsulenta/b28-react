@@ -113,6 +113,7 @@ export const StyledLink = styled.a`
   padding: 0.2em 0.6em;
   border-radius: 1em;
   transition: all 0.2s ease;
+  cursor: none;
   &:hover {
     background-color: ${theme.colors.menuFifth};
   }

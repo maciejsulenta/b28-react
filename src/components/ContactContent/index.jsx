@@ -58,6 +58,7 @@ const ContactContent = () => {
         >
           <InfoWrap>
             <StyledLink
+              className="hover"
               href="https://www.facebook.com/B28Tattoo"
               target="_blank"
             >
@@ -67,6 +68,7 @@ const ContactContent = () => {
           </InfoWrap>
           <InfoWrap>
             <StyledLink
+              className="hover"
               href="https://www.instagram.com/b28tattoo/"
               target="_blank"
             >
@@ -76,6 +78,7 @@ const ContactContent = () => {
           </InfoWrap>
           <InfoWrap>
             <StyledLink
+              className="hover"
               href="https://www.instagram.com/b28_damian/"
               target="_blank"
             >
@@ -85,6 +88,7 @@ const ContactContent = () => {
           </InfoWrap>
           <InfoWrap>
             <StyledLink
+              className="hover"
               href="https://www.instagram.com/demonology_ink/"
               target="_blank"
             >

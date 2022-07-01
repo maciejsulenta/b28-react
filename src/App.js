@@ -17,6 +17,7 @@ import ScrollButton from "./components/ScrollButton";
 import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
+import Cursor from "./components/Cursor";
 
 function App() {
   useEffect(() => {
@@ -151,6 +152,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
+        <Cursor />
         <Navbar />
         <div id="smooth-content">
           <PagesContainer>

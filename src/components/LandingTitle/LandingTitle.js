@@ -51,7 +51,6 @@ export const StyledLandingTitle = styled.h1`
   top: ${(props) => (props.secondary ? "85%" : "45%")};
   left: ${(props) => (props.secondary ? "68%" : "50%")};
   transform: translate(-50%, -50%);
-  cursor: default;
   @media screen and (max-width: 380px) {
     font-size: ${(props) => (props.secondary ? "6em" : "18.5em")};
     top: ${(props) => (props.secondary ? "77%" : "45%")};

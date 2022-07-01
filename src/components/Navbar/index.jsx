@@ -40,7 +40,7 @@ const Navbar = () => {
       <LogoHeader>B28</LogoHeader>
       <NavWrap>
         <MenuLink
-          className="link"
+          className="link hover"
           spy={true}
           offset={100}
           smooth={true}
@@ -51,7 +51,7 @@ const Navbar = () => {
           O nas
         </MenuLink>
         <MenuLink
-          className="link"
+          className="link hover"
           spy={true}
           smooth={true}
           duration={1000}
@@ -61,7 +61,7 @@ const Navbar = () => {
           Galeria
         </MenuLink>
         <MenuLink
-          className="link"
+          className="link hover"
           spy={true}
           smooth={true}
           offset={-100}
@@ -74,12 +74,17 @@ const Navbar = () => {
       </NavWrap>
       <NavSocials>
         <NavSocial>
-          <StyledLink href="https://www.facebook.com/B28Tattoo" target="_blank">
+          <StyledLink
+            className="hover"
+            href="https://www.facebook.com/B28Tattoo"
+            target="_blank"
+          >
             <Image src={Facebook} />
           </StyledLink>
         </NavSocial>
         <NavSocial>
           <StyledLink
+            className="hover"
             href="https://www.instagram.com/b28tattoo/"
             target="_blank"
           >

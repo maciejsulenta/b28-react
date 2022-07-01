@@ -46,7 +46,6 @@ export const MenuLink = styled(Link)`
   text-transform: uppercase;
   color: ${theme.colors.fontWhite};
   white-space: nowrap;
-  cursor: pointer;
   padding: 0.25em 0.7em;
   transition: all 0.3s ease;
   display: flex;
@@ -79,7 +78,7 @@ export const LogoHeader = styled(motion.p)`
     justify-content: center;
     align-items: center;
     color: ${theme.colors.fontWhite};
-    cursor: pointer;
+    
   }
 `;
 export const NavSocials = styled(motion.div)`
@@ -93,9 +92,10 @@ export const NavSocials = styled(motion.div)`
   }
 `;
 export const NavSocial = styled(motion.div)`
-  cursor: pointer;
+  
 `;
 export const StyledLink = styled.a`
   text-decoration: none;
+  cursor: none;
 `;
 export const Image = styled.img``;
