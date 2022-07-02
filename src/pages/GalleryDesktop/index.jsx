@@ -4,7 +4,12 @@ import ScrollSmoother from "gsap-trial/ScrollSmoother";
 import { useEffect, useRef } from "react";
 import { galleryData } from "../../assets/data/galleryData";
 import GalleryTitle from "../../components/GalleryTitle";
-import { GalleryWrap, Slide, ImageContainer } from "./GalleryDesktop.js";
+import {
+  GalleryWrap,
+  Slide,
+  ImageContainer,
+  ProgressBar,
+} from "./GalleryDesktop.js";
 const GalleryDesktop = () => {
   //horizontal scroll
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -21,7 +26,7 @@ const GalleryDesktop = () => {
         // markers: true,
         pin: true,
         scrub: 1,
-        end: () => "+=" + container.offsetWidth,
+        end: "+=" + container.offsetWidth,
       },
     });
 
@@ -44,6 +49,18 @@ const GalleryDesktop = () => {
         { clipPath: "inset(0px 100% 0px 0px)" },
         { clipPath: "inset(0px 0px 0px 0px)" }
       );
+    });
+
+    gsap.from("#progressBar", {
+      scaleX: 0,
+      transformOrigin: "left center",
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#slide",
+        scrub: true,
+        start: "top top",
+        end: () => "+=" + container.offsetWidth,
+      },
     });
   }, []);
 
@@ -83,7 +100,9 @@ const GalleryDesktop = () => {
   return (
     <>
       <GalleryWrap id="container" name="gallery">
-        <Slide starter />
+        <Slide starter id="slide">
+          <ProgressBar id="progressBar" />
+        </Slide>
         <Slide id="component">
           {galleryData.map((item) => (
             <ImageContainer

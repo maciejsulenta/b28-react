@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { Title } from "../Title";
 import {
   FooterWrap,
@@ -9,13 +9,6 @@ import {
 } from "./Footer";
 
 const Footer = () => {
-  // useEffect(() => {
-  //   let containerPosition = document
-  //     .getElementById("siema")
-  //     .getBoundingClientRect().top;
-  //   console.log(containerPosition);
-  // }, []);
-
   return (
     <FooterWrap
       // style={{ opacity: 0, y: 50 }}

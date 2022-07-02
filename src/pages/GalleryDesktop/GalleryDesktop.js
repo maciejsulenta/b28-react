@@ -29,3 +29,13 @@ export const ImageContainer = styled(motion.div)`
   z-index: 2;
   transition: all 0.4s ease;
 `;
+export const ProgressBar = styled.div`
+  height: 0.5em;
+  width: 100vw;
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  background-color: ${theme.colors.opinionFont};
+  z-index: 999;
+`;
