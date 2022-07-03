@@ -45,16 +45,12 @@ Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<
 <h2>Mobile version</h2>
 
 <p float="left">
-<h3>Loader & Landing Page</h3>
 <img src="https://user-images.githubusercontent.com/84193424/177051994-9aa77a1f-b452-453f-a6f0-148206011a9c.gif" alt="loader_landing-mobile" height="400"/>
-
-<h3>Burger menu</h3>
 <img src="https://user-images.githubusercontent.com/84193424/177052169-eac8ad4b-d36d-4270-87a8-d119cbc63ed8.gif" alt="burger-menu" height="400"/>
-
 </p>
 
 <h3>About us</h3>
-<img src="https://user-images.githubusercontent.com/84193424/177052365-eed9861e-174c-4253-b2a3-676fe7ac2551.gif" alt="aboutus-mobile" height="400"/>
+
 
 <h3>Opinions</h3>
 <img src="https://user-images.githubusercontent.com/84193424/177052425-af7ba5cd-c8ef-4968-a780-adb4fd3bad19.png" alt="opinions-mobile" height="400"/>
@@ -68,15 +64,3 @@ Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<
 <h3>Footer</h3>
 <img src="https://user-images.githubusercontent.com/84193424/177052988-d85d603b-52a9-4d7e-8070-88d6a0f892d0.png" alt="aboutus-mobile" height="400"/>
 
-<table>
-  <tr>
-    <td>First Screen Page</td>
-     <td>Holiday Mention</td>
-     <td>Present day in purple and selected day in pink</td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/84193424/177052988-d85d603b-52a9-4d7e-8070-88d6a0f892d0.png" alt="aboutus-mobile" height="400"/></td>
-    <td><img src="https://user-images.githubusercontent.com/84193424/177052988-d85d603b-52a9-4d7e-8070-88d6a0f892d0.png" alt="aboutus-mobile" height="400"/></td>
-    <td><img src="https://user-images.githubusercontent.com/84193424/177052988-d85d603b-52a9-4d7e-8070-88d6a0f892d0.png" alt="aboutus-mobile" height="400"/></td>
-  </tr>
- </table>
