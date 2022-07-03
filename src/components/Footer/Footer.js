@@ -55,7 +55,7 @@ export const Wrap = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.7em;
+  gap: 1em;
   transition: all 0.5s ease;
   ${Button}:hover & {
     transform: translate(-50%, -60%);
