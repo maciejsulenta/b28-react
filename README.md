@@ -10,7 +10,6 @@
 Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<a/> created as a SPA (Single Page Application). 
 
 <h2 id="tech-used">Technologies Used</h2>
-<li><a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a></li>
 <li><a href="https://www.w3schools.com/css/">CSS</a></li>
 <li><a href="https://developer.mozilla.org/pl/docs/Web/JavaScript">Javascript</a></li>
 <li><a href="https://reactjs.org/">React</a></li>
