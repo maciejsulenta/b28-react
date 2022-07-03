@@ -1,5 +1,4 @@
-# B28 studio tatuażu website
-
+<h1>Projekt B28 Studio Tatuażu website </h1>
 <h2>Table of Contents</h2>
 <li><a href="#general-info">General Info</a></li>
 <li><a href="#tech-used">Technologies Used</a></li>
@@ -20,6 +19,7 @@ Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<
 <li><a href="https://greensock.com/gsap/">GSAP</a></li>
 <li><a href="https://www.framer.com/motion/">Framer Motion</a></li>
 <li><a href="https://github.com/fisshy/react-scroll">React Scroll</a></li>
+<li><a href="https://mui.com/material-ui/material-icons/">Material Icons</a></li>
 
 <h2 id="presentation">Presentation</h2>
 
@@ -43,24 +43,28 @@ Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<
 <img src="https://user-images.githubusercontent.com/84193424/177051515-af796538-6e3d-4b92-b943-ed3c6c512ad6.png" alt="footer-desktop" width="640"/>
 
 <h2>Mobile version</h2>
-
+<h3>Loader & Landing &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Burger menu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; About us</h3>
 <p float="left">
 <img src="https://user-images.githubusercontent.com/84193424/177051994-9aa77a1f-b452-453f-a6f0-148206011a9c.gif" alt="loader_landing-mobile" height="400"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
 <img src="https://user-images.githubusercontent.com/84193424/177052169-eac8ad4b-d36d-4270-87a8-d119cbc63ed8.gif" alt="burger-menu" height="400"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<img src="https://user-images.githubusercontent.com/84193424/177052365-eed9861e-174c-4253-b2a3-676fe7ac2551.gif" alt="aboutus-mobile" height="400"/>
 </p>
 
-<h3>About us</h3>
-
-
-<h3>Opinions</h3>
+<h3>Opinions &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gallery &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Contact</h3>
+<p float="left">
 <img src="https://user-images.githubusercontent.com/84193424/177052425-af7ba5cd-c8ef-4968-a780-adb4fd3bad19.png" alt="opinions-mobile" height="400"/>
-
-<h3>Gallery</h3>
+&nbsp; &nbsp; &nbsp; &nbsp;
 <img src="https://user-images.githubusercontent.com/84193424/177052618-52f36648-1904-402d-a824-f5090c87645a.gif" alt="gallery-mobile" height="400"/>
-
-<h3>Contact</h3>
+&nbsp; &nbsp; &nbsp; &nbsp;
 <img src="https://user-images.githubusercontent.com/84193424/177052943-89a302ab-a7fe-4a2f-ba86-5772af48f7c3.gif" alt="contact-mobile" height="400"/>
+</p>
 
 <h3>Footer</h3>
 <img src="https://user-images.githubusercontent.com/84193424/177052988-d85d603b-52a9-4d7e-8070-88d6a0f892d0.png" alt="aboutus-mobile" height="400"/>
 
+<h2 id="setup">Setup</h2>
+Run <strong>npm install</strong> to install all dependencies needed for this project. They are listed in <strong>package.json</strong> file.
+<h2 id="usage">Usage</h2>
+<strong>npm start</strong> - to run the app
