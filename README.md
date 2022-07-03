@@ -17,12 +17,25 @@ opinions
 <img src="https://user-images.githubusercontent.com/84193424/177050678-bed785ee-33dc-4810-822f-952647fd1cd1.png" alt="opinions-desktop" width="640"/>
 
 gallery
-
 <img src="https://user-images.githubusercontent.com/84193424/177051214-283c60b9-1a4d-47b8-96b2-005f30468938.gif" alt="gallery-desktop" width="640"/>
 
 contact
+<img src="https://user-images.githubusercontent.com/84193424/177051405-3c50afaf-927e-470d-8d96-468273a24f84.gif" alt="contact-desktop" width="640"/>
 
-<img src="https://user-images.githubusercontent.com/84193424/177051405-3c50afaf-927e-470d-8d96-468273a24f84.gif" alt="gallery-desktop" width="640"/>
-
+footer
+<img src="https://user-images.githubusercontent.com/84193424/177051515-af796538-6e3d-4b92-b943-ed3c6c512ad6.png" alt="footer-desktop" width="640"/>
 
 #MOBILE VERSION
+
+loader and landing page
+<img src="https://user-images.githubusercontent.com/84193424/177051994-9aa77a1f-b452-453f-a6f0-148206011a9c.gif" alt="loader_landing-mobile"/>
+
+about us
+
+opinions
+
+gallery
+
+contact
+
+footer
