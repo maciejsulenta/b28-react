@@ -30,12 +30,20 @@ footer
 loader and landing page
 <img src="https://user-images.githubusercontent.com/84193424/177051994-9aa77a1f-b452-453f-a6f0-148206011a9c.gif" alt="loader_landing-mobile" height="400"/>
 
+burger menu
+<img src="https://user-images.githubusercontent.com/84193424/177052169-eac8ad4b-d36d-4270-87a8-d119cbc63ed8.gif" alt="burger-menu" height="400"/>
+
 about us
+<img src="https://user-images.githubusercontent.com/84193424/177052365-eed9861e-174c-4253-b2a3-676fe7ac2551.gif" alt="aboutus-mobile" height="400"/>
 
 opinions
+<img src="https://user-images.githubusercontent.com/84193424/177052425-af7ba5cd-c8ef-4968-a780-adb4fd3bad19.png" alt="opinions-mobile" height="400"/>
 
 gallery
+<img src="https://user-images.githubusercontent.com/84193424/177052618-52f36648-1904-402d-a824-f5090c87645a.gif" alt="gallery-mobile" height="400"/>
 
 contact
+<img src="https://user-images.githubusercontent.com/84193424/177052943-89a302ab-a7fe-4a2f-ba86-5772af48f7c3.gif" alt="contact-mobile" height="400"/>
 
 footer
+<img src="https://user-images.githubusercontent.com/84193424/177052988-d85d603b-52a9-4d7e-8070-88d6a0f892d0.png" alt="aboutus-mobile" height="400"/>
