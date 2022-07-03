@@ -28,7 +28,7 @@ footer
 #MOBILE VERSION
 
 loader and landing page
-<img src="https://user-images.githubusercontent.com/84193424/177051994-9aa77a1f-b452-453f-a6f0-148206011a9c.gif" alt="loader_landing-mobile"/>
+<img src="https://user-images.githubusercontent.com/84193424/177051994-9aa77a1f-b452-453f-a6f0-148206011a9c.gif" alt="loader_landing-mobile" height="400"/>
 
 about us
 
