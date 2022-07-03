@@ -16,4 +16,11 @@ about us
 opinions
 <img src="https://user-images.githubusercontent.com/84193424/177050678-bed785ee-33dc-4810-822f-952647fd1cd1.png" alt="opinions-desktop" width="640"/>
 
+gallery
+
+<img src="https://user-images.githubusercontent.com/84193424/177051214-283c60b9-1a4d-47b8-96b2-005f30468938.gif" alt="gallery-desktop" width="640"/>
+
+
+
+
 #MOBILE VERSION
