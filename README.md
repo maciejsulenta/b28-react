@@ -20,7 +20,9 @@ gallery
 
 <img src="https://user-images.githubusercontent.com/84193424/177051214-283c60b9-1a4d-47b8-96b2-005f30468938.gif" alt="gallery-desktop" width="640"/>
 
+contact
 
+<img src="https://user-images.githubusercontent.com/84193424/177051405-3c50afaf-927e-470d-8d96-468273a24f84.gif" alt="gallery-desktop" width="640"/>
 
 
 #MOBILE VERSION
