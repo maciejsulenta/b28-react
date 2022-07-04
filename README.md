@@ -2,12 +2,13 @@
 <h2>Table of Contents</h2>
 <li><a href="#general-info">General Info</a></li>
 <li><a href="#tech-used">Technologies Used</a></li>
+<li><a href="#figma">Website Design</a></li>
 <li><a href="#presentation">Presentation</a></li>
 <li><a href="#setup">Setup</a></li>
 <li><a href="#usage">Usage</a></li>
 
-<h2>General Info</h2>
-Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<a/> created as a SPA (Single Page Application). 
+<h2 id="general-info">General Info</h2>
+Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<a/> created as a One Page Website. 
 
 <h2 id="tech-used">Technologies Used</h2>
 <li><a href="https://www.w3schools.com/css/">CSS</a></li>
@@ -21,6 +22,7 @@ Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<
 <li><a href="https://mui.com/material-ui/material-icons/">Material Icons</a></li>
 
 <h2 id="presentation">Presentation</h2>
+<li>You can see the mockup of the website in Figma <a href="https://www.figma.com/file/vsNWOKtTbnS6FWQGy460y5/B28-tattoo?node-id=0%3A1">here</a></li>
 
 <h2>Desktop version</h2>
 <h3>Loader & Landing Page</h3>
