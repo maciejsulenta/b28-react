@@ -21,9 +21,10 @@ Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<
 <li><a href="https://github.com/fisshy/react-scroll">React Scroll</a></li>
 <li><a href="https://mui.com/material-ui/material-icons/">Material Icons</a></li>
 
-<h2 id="presentation">Presentation</h2>
+<h2 id="figma">Website design</h2>
 <li>You can see the mockup of the website in Figma <a href="https://www.figma.com/file/vsNWOKtTbnS6FWQGy460y5/B28-tattoo?node-id=0%3A1">here</a></li>
 
+<h2 id="presentation">Presentation</h2>
 <h2>Desktop version</h2>
 <h3>Loader & Landing Page</h3>
 <img src="https://user-images.githubusercontent.com/84193424/177050335-83c32ca4-34b1-457c-80ce-dfa8463724a4.gif" alt="loader_landing-desktop" width="640" title="siemano"/>
@@ -66,6 +67,6 @@ Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<
 <img src="https://user-images.githubusercontent.com/84193424/177052988-d85d603b-52a9-4d7e-8070-88d6a0f892d0.png" alt="aboutus-mobile" height="400"/>
 
 <h2 id="setup">Setup</h2>
-Run <strong>npm install</strong> to install all dependencies needed for this project. They are listed in <strong>package.json</strong> file.
+Run <code>npm install</code> to install all dependencies needed for this project. They are listed in <code>package.json</code> file.
 <h2 id="usage">Usage</h2>
-<strong>npm start</strong> - to run the app
+<code>npm start</code> - to run the app
