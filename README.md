@@ -68,5 +68,6 @@ Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<
 
 <h2 id="setup">Setup</h2>
 Run <code>npm install</code> to install all dependencies needed for this project. They are listed in <code>package.json</code> file.
+
 <h2 id="usage">Usage</h2>
 <code>npm start</code> - to run the app
