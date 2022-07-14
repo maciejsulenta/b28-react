@@ -27,7 +27,7 @@ Example of web business card website for <a href="">Projekt B28 Studio Tatuażu<
 <h2 id="presentation">Presentation</h2>
 <h2>Desktop version</h2>
 <h3>Loader & Landing Page</h3>
-<img src="https://user-images.githubusercontent.com/84193424/177050335-83c32ca4-34b1-457c-80ce-dfa8463724a4.gif" alt="loader_landing-desktop" width="640" title="siemano"/>
+<img src="https://user-images.githubusercontent.com/84193424/177050335-83c32ca4-34b1-457c-80ce-dfa8463724a4.gif" alt="loader_landing-desktop" width="640"/>
 
 <h3>About us</h3>
 <img src="https://user-images.githubusercontent.com/84193424/177050330-2dcbd0f6-edeb-4eb8-bbce-7e3eb655fc97.gif" alt="opinions-desktop" width="640"/>
