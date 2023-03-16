@@ -14,15 +14,15 @@ const animateBg = keyframes`
 export const PagesContainer = styled.section`
   width: 100%;
   height: fit-content;
-  /* background-color: ${theme.colors.bgcDark}; */
+  background-color: ${theme.colors.bgcDark};
   background: linear-gradient(
       to right,
-      rgba(20, 20, 20, 0.90),
-      rgba(20, 20, 20, 0.90)
+      rgba(20, 20, 20, 0.9),
+      rgba(20, 20, 20, 0.9)
     ),
-    url(https://ak.picdn.net/shutterstock/videos/1065839665/thumb/4.jpg);
+    url(https://png.pngtree.com/thumb_back/fh260/background/20210915/pngtree-noise-simple-fault-gray-noise-texture-background-image_887800.jpg);
   z-index: -10;
-  animation: ${animateBg} 0.1s linear infinite alternate;
+  animation: ${animateBg} 0.01s linear infinite alternate;
   overflow-x: hidden;
   @media screen and (min-width: 450px) {
     font-size: 22px;
