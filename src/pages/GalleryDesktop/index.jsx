@@ -1,6 +1,5 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-// import ScrollSmoother from "gsap-trial/ScrollSmoother";
 import { useEffect } from "react";
 import { galleryData } from "../../assets/data/galleryData";
 import GalleryTitle from "../../components/GalleryTitle";

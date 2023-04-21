@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-expressions */
 
+///////////////////
 let e,
   t,
   r,
@@ -11,12 +12,12 @@ let e,
   l,
   c,
   d,
+  f,
   h,
   g,
-  f,
   p,
   u = () => "undefined" != typeof window,
-  m = () => e || (u() && (e = window.gsap) && e.registerPlugin && e),
+  m = () => e || (u() && (e = window.gsap)),
   v = function () {
     return String.fromCharCode.apply(null, arguments);
   },
@@ -231,16 +232,15 @@ let e,
                 105,
                 112,
                 47
-              ) +
-              "?plugin=ScrollSmoother&source=trial");
+              ));
         }, 3e3);
     })("undefined" != typeof window ? window.location.host : ""),
     (e) => {
-      let t = o.querySelector(".ScrollSmoother-wrapper");
+      let t = o.querySelector(".SmoothScroll-wrapper");
       return (
         t ||
           ((t = o.createElement("div")),
-          t.classList.add("ScrollSmoother-wrapper"),
+          t.classList.add("SmoothScroll-wrapper"),
           e.parentNode.insertBefore(t, e),
           t.appendChild(e)),
         t
@@ -294,8 +294,7 @@ class S {
       Z = (e) => {
         e.update();
         let t = e.getTween();
-        t && (t.pause(), (t._time = t._dur), (t._tTime = t._tDur)),
-          (z = !1),
+        t && (t.pause(), (t._time = t._dur), (t._tTime = t._tDur))((z = !1)),
           e.animation.progress(e.progress, !0);
       },
       $ = (e, t) => {
@@ -577,10 +576,7 @@ class S {
       }),
       (this.content = function (t) {
         if (arguments.length) {
-          let r =
-            n(t || "#smooth-content")[0] ||
-            console.warn("ScrollSmoother needs a valid content element.") ||
-            i.children[0];
+          let r = n(t || "#smooth-content")[0] || i.children[0];
           return (
             r !== m &&
               ((m = r),
@@ -687,7 +683,7 @@ class S {
             y: () => -de(),
             immediateRender: !1,
             ease: "none",
-            data: "ScrollSmoother",
+            data: "SmoothScroll",
             duration: 100,
             onUpdate: function () {
               if (this._dur) {
@@ -731,7 +727,7 @@ class S {
             A && ((t.progress -= 0.001), t.update()),
             (S.isRefreshing = !1);
         },
-        id: "ScrollSmoother",
+        id: "SmoothScroll",
         scroller: r,
         invalidateOnRefresh: !0,
         start: 0,
@@ -842,7 +838,7 @@ class S {
             .delayedCall(0.2, () => l.isRefreshing || (c && c.refresh()))
             .pause()),
           (l = e.core.globals().ScrollTrigger),
-          e.core.globals("ScrollSmoother", S),
+          e.core.globals("SmoothScroll", S),
           i &&
             l &&
             ((h = l.core._getVelocityProp),
@@ -853,10 +849,9 @@ class S {
     );
   }
 }
-(S.version = "3.11.5"),
-  (S.create = (e) =>
-    c && e && c.content() === n(e.content)[0] ? c : new S(e)),
+(S.create = (e) => (c && e && c.content() === n(e.content)[0] ? c : new S(e))),
   (S.get = () => c),
   m() && e.registerPlugin(S);
+
 export default S;
-export { S as ScrollSmoother };
+export { S as SmoothScroll };

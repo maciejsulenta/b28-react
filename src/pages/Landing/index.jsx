@@ -9,7 +9,7 @@ const Landing = () => {
     document.body.classList.add("no-scroll");
     const timeout = setTimeout(() => {
       document.body.classList.remove("no-scroll");
-    }, 4000);
+    }, 5500);
 
     return () => clearTimeout(timeout);
   }, []);
