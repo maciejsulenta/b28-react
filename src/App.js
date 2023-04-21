@@ -14,14 +14,14 @@ import GalleryMobile from "./pages/GalleryMobile";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import ScrollButton from "./components/ScrollButton";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+import { ScrollSmoother } from "./ScrollSmoother";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import Cursor from "./components/Cursor";
 
 function App() {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+    gsap.registerPlugin(ScrollTrigger);
 
     let smoother = ScrollSmoother.create({
       content: "#smooth-content",
@@ -174,5 +174,3 @@ function App() {
 }
 
 export default App;
-
-// "play reverse restart none"

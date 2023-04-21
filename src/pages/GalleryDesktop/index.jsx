@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import ScrollSmoother from "gsap-trial/ScrollSmoother";
-import { useEffect, useRef } from "react";
+// import ScrollSmoother from "gsap-trial/ScrollSmoother";
+import { useEffect } from "react";
 import { galleryData } from "../../assets/data/galleryData";
 import GalleryTitle from "../../components/GalleryTitle";
 import {
@@ -12,7 +12,7 @@ import {
 } from "./GalleryDesktop.js";
 const GalleryDesktop = () => {
   //horizontal scroll
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     const component = document.querySelector("#component");
     const container = document.querySelector("#container");
