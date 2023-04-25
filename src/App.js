@@ -14,13 +14,16 @@ import GalleryMobile from "./pages/GalleryMobile";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import ScrollButton from "./components/ScrollButton";
-import { SmoothScroll } from "./ScrollSmoother";
 import gsap from "gsap";
+import { ScrollSmoother } from "gsap-trial/all";
+import { ScrollTrigger } from "gsap/all";
 import Cursor from "./components/Cursor";
 
 function App() {
   useEffect(() => {
-    let smoother = SmoothScroll.create({
+    gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+
+    let smoother = ScrollSmoother.create({
       content: "#smooth-content",
       effects: true,
       smooth: 0.6,
